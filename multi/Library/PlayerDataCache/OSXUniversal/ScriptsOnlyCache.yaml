@@ -4,9 +4,7 @@ ScriptsOnlyBuild:
     - PlayerController
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
     - UnityEngine.Networking.NetworkManager
     - UnityEngine.Networking.NetworkManagerHUD
@@ -573,4 +571,4 @@ ScriptsOnlyBuild:
   platform: 2
   scenePathNames:
   - Assets/Maib.unity
-  playerPath: /Users/ionyrakotoson/projet-s2/saisonapasdiD(multi)/Multi.app
+  playerPath: /Users/ionyrakotoson/projet-s2/multi/Multi.app

@@ -4,8 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Maib.unity
-    guid: a151286c96b9849deb24bbc2046890b8
+  m_Scenes: []
   m_configObjects: {}

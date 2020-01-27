@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+<<<<<<< HEAD
     <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_multi.-131826116.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
@@ -10,14 +11,26 @@
         <e p="Scenes" t="Include">
           <e p="tir du pistolet.cs" t="Include" />
         </e>
+=======
+    <e p="C:\Users\ludov\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ludov\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_multi.788996641.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ludov\projet-s2\multi" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="PlayerController1.cs" t="Include" />
+>>>>>>> 1e43e76cb9b1dfb778927fc5da93739c953fcd5d
         <e p="shot" t="Include">
           <e p="Mesh" t="Include">
             <e p="healts.cs" t="Include" />
             <e p="healts1.cs" t="Include" />
+<<<<<<< HEAD
             <e p="MoveScript.cs" t="Include" />
             <e p="MoveScript1.cs" t="Include" />
             <e p="Shotscript.cs" t="Include" />
             <e p="WeaponScript.cs" t="Include" />
+=======
+            <e p="Shotscript.cs" t="Include" />
+>>>>>>> 1e43e76cb9b1dfb778927fc5da93739c953fcd5d
             <e p="WeaponScript1.cs" t="Include" />
           </e>
         </e>
@@ -25,7 +38,11 @@
       <e p="multi.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+<<<<<<< HEAD
       <e p="Temp/bin" t="ExcludeRecursive" />
+=======
+      <e p="Temp\bin" t="ExcludeRecursive" />
+>>>>>>> 1e43e76cb9b1dfb778927fc5da93739c953fcd5d
     </e>
   </component>
 </project>

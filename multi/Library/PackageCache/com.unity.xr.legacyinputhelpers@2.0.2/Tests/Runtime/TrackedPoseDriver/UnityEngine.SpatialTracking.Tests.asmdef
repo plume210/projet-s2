@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "UnityEngine.SpatialTracking.Tests",
     "references": [
@@ -8,4 +9,16 @@
     ],
     "includePlatforms": [],
     "excludePlatforms": []
+=======
+{
+    "name": "UnityEngine.SpatialTracking.Tests",
+    "references": [
+        "UnityEngine.SpatialTracking"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+>>>>>>> 1e43e76cb9b1dfb778927fc5da93739c953fcd5d
 }

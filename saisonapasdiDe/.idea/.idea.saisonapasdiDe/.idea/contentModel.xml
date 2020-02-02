@@ -6,15 +6,15 @@
     <e p="C:\Users\ludov\projet-s2\saisonapasdiDe" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="camerasuivante.cs" t="Include" />
         <e p="Personnage" t="Include">
           <e p="armes" t="Include">
             <e p="shotScript.cs" t="Include" />
             <e p="WeaponScript.cs" t="Include" />
           </e>
-        </e>
-        <e p="Scenes" t="Include">
-          <e p="ChangeScenes.cs" t="Include" />
-          <e p="PlayerController.cs" t="Include" />
+          <e p="pinguin" t="Include">
+            <e p="PlayerController.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

@@ -6,17 +6,19 @@ using UnityEngine;
 public class PlayerController : NetworkBehaviour
 
 {
-    public float rotate = 300.0f;
+    public float speed = 300.0f;
     void Update()
     {
         if (!isLocalPlayer) //code de déplacement + vérification pr voir si le joueur est un joueur local 
         {
-            var x = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
-            var z = Input.GetAxis("Vertical") * Time.deltaTime * 150.0f;
-            var y = Input.GetAxis("Jump");
-            var angle = Input.GetAxisRaw("Mouse Y")*Time.deltaTime*rotate;
-            var angley = Input.GetAxisRaw("Mouse X")*Time.deltaTime*rotate;
-            transform.Translate(x, y, z);
+            var x1 = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
+            var z1 = Input.GetAxis("Vertical") * Time.deltaTime * 150.0f;
+            var y1 = Input.GetAxis("Jump");
+            var angle = Input.GetAxisRaw("Mouse Y")*Time.deltaTime*speed;
+            var angley = Input.GetAxisRaw("Mouse X")*Time.deltaTime*speed;
+            transform.Translate(x1, y1, z1);
+            var rotate2 = Camera.current.ScreenToWorldPoint(Input.mousePosition);
+            transform.Rotate(rotate2, Input.mousePosition.x);
         }
         
     }

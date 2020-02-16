@@ -10,7 +10,7 @@ public class PlayerController : NetworkBehaviour
     public float mousesensitivity = 2f;
     void Update()
     {
-        if (!isLocalPlayer) //code de déplacement + vérification pr voir si le joueur est un joueur local 
+        if (isLocalPlayer) //code de déplacement + vérification pr voir si le joueur est un joueur local 
         {
             var x1 = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
             var z1 = Input.GetAxis("Vertical") * Time.deltaTime * 150.0f;

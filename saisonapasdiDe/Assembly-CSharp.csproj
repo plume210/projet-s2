@@ -57,8 +57,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\collision.cs" />
+     <Compile Include="Assets\Personnage\armes\Enemie.cs" />
      <Compile Include="Assets\Personnage\armes\ShotScript.cs" />
      <Compile Include="Assets\Personnage\armes\WeaponScript.cs" />
+     <Compile Include="Assets\Personnage\pinguin\cameracontrolle.cs" />
      <Compile Include="Assets\Personnage\pinguin\PlayerController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/ludov/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class collision : MonoBehaviour
+public class collision : NetworkBehaviour
 {
     void OnCollisionEnter(Collision other)
     {

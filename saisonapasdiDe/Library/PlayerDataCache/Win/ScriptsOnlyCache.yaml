@@ -50,11 +50,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9962}
     - Class: 114
-      Script: {instanceID: 10782}
+      Script: {instanceID: 10784}
     - Class: 114
-      Script: {instanceID: 11800}
+      Script: {instanceID: 11802}
     - Class: 114
-      Script: {instanceID: 11862}
+      Script: {instanceID: 11864}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -358,6 +358,12 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkTransformVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 8e5e1179ec5b7c0d8a1c35825d189bd0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemie
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -672,7 +678,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 05d3e6fc12f8a0329b9d3b10c49f5304
+      Hash: af7a6901bfa1e0611e85fd4682905734
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShotScript
@@ -697,4 +703,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/maps/map.unity
-  playerPath: D:/projet-s2/saisonapasdiDe.exe
+  playerPath: D:/ludov/Pictures/Saved Pictures/saisonapasdiDe.exe

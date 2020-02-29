@@ -10,15 +10,16 @@ public class PlayerController : NetworkBehaviour
     public float mousesensitivity = 2f;
     void Update()
     {
-        if (isLocalPlayer) //code de déplacement + vérification pr voir si le joueur est un joueur local 
+        if (!isLocalPlayer) //code de déplacement + vérification pr voir si le joueur est un joueur local 
         {
             var x1 = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
             var z1 = Input.GetAxis("Vertical") * Time.deltaTime * 150.0f;
             var y1 = Input.GetAxis("Jump");
-            var angle = Input.GetAxisRaw("Mouse X")*Time.deltaTime*speed;
+            var angle = Input.GetAxisRaw("Mouse Y")*Time.deltaTime*speed;
+            var angle2 = Input.GetAxisRaw("Mouse X")*Time.deltaTime*speed;
             transform.Translate(z1, y1, x1);
-            float mouseposition = Input.GetAxis("Mouse X") * mousesensitivity;
-            transform.Rotate(0, angle,0 );
+            var positiondujoueur = new Vector3(x1,y1);
+            transform.Rotate(positiondujoueur, angle2);
         }
         
     }

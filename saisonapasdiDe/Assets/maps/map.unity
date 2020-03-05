@@ -211,6 +211,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1360742738 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4308861032860520490, guid: 3053365e3c57945fbb8866bc391cd015,
@@ -384,6 +385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 300
   mousesensitivity: 2
+=======
+>>>>>>> 2b8895f013dbedb5d6e041993d702c1953540f89
 --- !u!1 &1564835788
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +442,7 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 1172053268369490498, guid: f23d2e172b562244880694b133350759,
+  m_PlayerPrefab: {fileID: 4263977715810747155, guid: 24a5c01252b209f43a1670bc8e90e85e,
     type: 3}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
@@ -618,7 +621,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 134.44872
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -648,7 +651,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 89.618004, y: 48.171, z: 48.171}
 --- !u!114 &1861409302
 MonoBehaviour:

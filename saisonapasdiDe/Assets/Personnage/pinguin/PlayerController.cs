@@ -9,8 +9,11 @@ public class PlayerController : NetworkBehaviour
 {
     public GameObject balled;
     public Transform bulletspawn;
+    public float bulletspeed;
     public float speed = 300.0f;
     public float mousesensitivity = 2f;
+    
+
     void Update()
     {
         if (!isLocalPlayer) //code de déplacement + vérification pr voir si le joueur est un joueur local 
@@ -23,19 +26,18 @@ public class PlayerController : NetworkBehaviour
             transform.Translate(z1, 0, x1);
             var positiondujoueur = new Vector3(x1,y1);
            // transform.Rotate(positiondujoueur, angle2);
-            
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Fire();
-            }
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Fire();
         }
 
         void Fire()
         {
             // instantiate = creer a une certaine position
-            var bullet = (GameObject) Instantiate(balled, bulletspawn.position, bulletspawn.rotation);
+            var bullet = (GameObject) Instantiate(balled, bulletspawn.position,bulletspawn.rotation,bulletspawn.transform);
             // ajout de la velocite a la balle
-            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
+            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bulletspeed;
             // f = temps (2seconde)
            // Destroy(bullet,2.0f);
         }

@@ -11,7 +11,7 @@ public class cameracontrolle : MonoBehaviour
         var x1 = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
         var z1 = Input.GetAxis("Vertical") * Time.deltaTime * 150.0f;
         var y1 = Input.GetAxis("Jump");
-        var angle = Input.GetAxisRaw("Mouse X")*Time.deltaTime;
-        transform.Translate(z1,x1, 0);
+        var x2 = Input.GetAxisRaw("Horizontal")* Time.deltaTime * 150.0f;
+        transform.Translate(x1,z1,0);
     }
 }

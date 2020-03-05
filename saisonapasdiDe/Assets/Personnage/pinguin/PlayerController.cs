@@ -22,7 +22,7 @@ public class PlayerController : NetworkBehaviour
             var angle2 = Input.GetAxisRaw("Mouse X")*Time.deltaTime*speed;
             transform.Translate(z1, 0, x1);
             var positiondujoueur = new Vector3(x1,y1);
-            transform.Rotate(positiondujoueur, angle2);
+           // transform.Rotate(positiondujoueur, angle2);
             
             if (Input.GetKeyDown(KeyCode.Space))
             {

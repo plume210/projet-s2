@@ -184,7 +184,7 @@ MonoBehaviour:
   m_PlayerPrefab: {fileID: 4263977715810747155, guid: 24a5c01252b209f43a1670bc8e90e85e,
     type: 3}
   m_AutoCreatePlayer: 1
-  m_PlayerSpawnMethod: 0
+  m_PlayerSpawnMethod: 1
   m_OfflineScene: 
   m_OnlineScene: 
   m_SpawnPrefabs: []
@@ -251,7 +251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195908129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 67, z: -919}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -347,7 +347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205700274}
   m_LocalRotation: {x: 0.70710677, y: -0.000006156983, z: 0.000006156983, w: 0.70710677}
-  m_LocalPosition: {x: 81, y: 787, z: -926}
+  m_LocalPosition: {x: 0, y: 787, z: 0}
   m_LocalScale: {x: -8.192171, y: -2.3593, z: -1.9630319}
   m_Children: []
   m_Father: {fileID: 0}

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/maps/map.unity
+- path: C:/Users/Alexandre/projeeet/lourd/Assets/Scenes/Def.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

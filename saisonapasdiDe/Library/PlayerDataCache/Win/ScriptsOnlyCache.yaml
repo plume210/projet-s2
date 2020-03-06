@@ -9,6 +9,10 @@ ScriptsOnlyBuild:
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    com.unity.multiplayer-hlapi.Editor.dll:
+    - UnityEditor.NetworkBehaviourInspector
+    - UnityEditor.NetworkIdentityEditor
+    - UnityEditor.NetworkTransformEditor
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
@@ -44,20 +48,22 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9790}
+      Script: {instanceID: 9792}
     - Class: 114
-      Script: {instanceID: 9962}
+      Script: {instanceID: 9964}
     - Class: 114
-      Script: {instanceID: 10048}
+      Script: {instanceID: 10050}
     - Class: 114
-      Script: {instanceID: 10784}
+      Script: {instanceID: 10786}
     - Class: 114
-      Script: {instanceID: 11802}
+      Script: {instanceID: 11804}
     - Class: 114
-      Script: {instanceID: 11864}
+      Script: {instanceID: 11866}
     - Class: 114
-      Script: {instanceID: 11918}
+      Script: {instanceID: 11920}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}

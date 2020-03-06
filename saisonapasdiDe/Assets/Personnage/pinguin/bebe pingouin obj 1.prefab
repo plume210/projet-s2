@@ -28,7 +28,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 4263977715810747145}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4263977715719072440
 GameObject:
@@ -60,7 +60,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4263977715810747145}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4263977715719072445
 MeshFilter:
@@ -142,9 +142,9 @@ Transform:
   m_LocalPosition: {x: 119, y: 25, z: -813}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
-  - {fileID: 5543585576743043435}
   - {fileID: 4263977715719072441}
   - {fileID: 4702389578428380219}
+  - {fileID: 5543585576743043435}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -189,13 +189,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4263977715810747155}
   serializedVersion: 2
-  m_Mass: 12
+  m_Mass: 78
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!136 &4263977715810747156
 CapsuleCollider:
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   balled: {fileID: 2129100794709618500, guid: fbf603a1e3a6c434eae886a0b4902bde, type: 3}
   bulletspawn: {fileID: 4702389578428380219}
-  bulletspeed: 0
+  bulletspeed: 3000
   speed: 300
   mousesensitivity: 2
 --- !u!114 &-2305208280892335041
@@ -360,7 +360,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 23cf837d432d85042ac3e6d55eafc514,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 23cf837d432d85042ac3e6d55eafc514,
         type: 3}

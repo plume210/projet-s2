@@ -37,7 +37,7 @@ public class PlayerController : NetworkBehaviour
         void Fire()
         {
             // instantiate = creer a une certaine position
-            var bullet = (GameObject) Instantiate(balled, bulletspawn.position,bulletspawn.rotation,bulletspawn.transform);
+            var bullet = (GameObject) Instantiate(balled, bulletspawn.position,bulletspawn.rotation);
             // ajout de la velocite a la balle
             bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bulletspeed;
             // f = temps (2seconde)

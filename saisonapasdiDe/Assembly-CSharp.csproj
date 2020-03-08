@@ -64,46 +64,46 @@
      <Compile Include="Assets\Personnage\pinguin\PlayerController.cs" />
      <Compile Include="Assets\Scenes\NewBehaviourScript.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Editor">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-weaver.Editor">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Runtime">
- <HintPath>C:/Users/Alexandre/projet-s2/saisonapasdiDe/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+ <HintPath>E:/ROGUELIKE/saisonapasdiDe/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

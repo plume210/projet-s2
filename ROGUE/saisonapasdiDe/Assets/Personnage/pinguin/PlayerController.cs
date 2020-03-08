@@ -21,15 +21,14 @@ public class PlayerController : NetworkBehaviour
             return;
         }
         
-        var x1 = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
-        var z1 = Input.GetAxis("Vertical") * Time.deltaTime * 150.0f;
+        var x1 = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+        var z1 = Input.GetAxis("Vertical") * Time.deltaTime * speed;
         var y1 = Input.GetAxis("Jump");
         //var angle = Input.GetAxisRaw("Mouse Y")*Time.deltaTime*speed;
         //var angle2 = Input.GetAxisRaw("Mouse X")*Time.deltaTime*speed;
-        transform.Translate(z1, 0, -x1);
-        //var positiondujoueur = new Vector3(x1,y1);
-        // transform.Rotate(positiondujoueur, angle2);
-        if (Input.GetButtonDown("Fire1"))
+        transform.Translate(z1, 0, 0);
+        transform.Rotate(0,x1, 0);
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             cmdFire();
         }

@@ -8,10 +8,9 @@ public class cameracontrolle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var x1 = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
-        var z1 = Input.GetAxis("Vertical") * Time.deltaTime * 150.0f;
-        var y1 = Input.GetAxis("Jump");
-        var x2 = Input.GetAxisRaw("Horizontal")* Time.deltaTime * 150.0f;
-        transform.Translate(z1,0,-x1);
+        var x1 = Input.GetAxis("Horizontal") * Time.deltaTime;
+        var z1 = Input.GetAxis("Vertical") * Time.deltaTime;
+        transform.Translate(0, z1, 0);
+        transform.Rotate(0,0, -x1);
     }
 }

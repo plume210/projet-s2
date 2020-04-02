@@ -58,6 +58,7 @@
   <ItemGroup>
      <Compile Include="Assets\CameraSmooth.cs" />
      <Compile Include="Assets\collision\collision.cs" />
+     <Compile Include="Assets\enemiesspawn.cs" />
      <Compile Include="Assets\joinscript.cs" />
      <Compile Include="Assets\menu\MainMenu.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
@@ -73,6 +74,7 @@
      <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\Resources\Personnage\armes\Enemie.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\Resources\Personnage\pinguin\PlayerController.cs" />
+     <Compile Include="Assets\playerhealth.cs" />
      <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />

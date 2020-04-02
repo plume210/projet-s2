@@ -1,16 +1,25 @@
 ﻿
 using System;
 using System.Collections;
+using System.Net;
+using System.Security.Cryptography;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
-using UnityEngine.UI;
+
+using Random = System.Random;
+
 
 public class joinscript : MonoBehaviourPunCallbacks
 {
     public Transform spawn;
     public GameObject player;
     public Camera camera;
+    public Transform spawn2;
+    public Transform enemiespawn1;
+    public Transform enemiespawn2;
+    public GameObject enemie;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -41,13 +50,28 @@ public class joinscript : MonoBehaviourPunCallbacks
         StartCoroutine(Spawnplayer());
         Debug.Log("Dématérialisation !!!!!!");
     }
-
     IEnumerator Spawnplayer()
     {
-        GameObject Myplayer = PhotonNetwork.Instantiate(player.name,spawn.position, Quaternion.identity, 0);
+        int random = new Random().Next(2);
+        Vector3 sp;
+        sp = new Vector3(spawn.transform.position.x + 
+            spawn.transform.position.z,
+            spawn.transform.position.y);
+        GameObject Myplayer;
+        if (random == 1)
+        {
+          Myplayer = PhotonNetwork.Instantiate(player.name,spawn.position, Quaternion.identity, 0);  
+        }
+        else
+        {
+             Myplayer = PhotonNetwork.Instantiate(player.name,spawn2.position, Quaternion.identity, 0);
+        }
+       
         camera.GetComponent<CameraSmooth>().target = Myplayer.transform;
         yield return new WaitForSeconds(5);
         Myplayer.AddComponent<Rigidbody>();
         Myplayer.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
     }
+
+    
 }

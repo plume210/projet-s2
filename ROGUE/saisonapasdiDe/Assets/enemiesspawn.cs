@@ -20,28 +20,31 @@ public class enemiesspawn : MonoBehaviour
         if (other.tag == "Player")
         {
 
-            int i = new Random().Next(15);
-            GameObject[] liste = new GameObject[i];
-            int u = 0;
+            int i = new Random().Next(1,4);
+            int g = 0;
+            int e = 0;
+            int u =0;
+            Debug.Log(i);
             while (i > u)
             {
-                int random = new Random().Next(2);
-                if (random == 1)
+                int posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),Convert.ToInt32(enemiespawn2.position.x));
+                int posy = new Random().Next(Convert.ToInt32(enemiespawn1.position.z),Convert.ToInt32(enemiespawn2.position.z));
+                while (g == posx && posy == e)
                 {
-                    liste[u] = PhotonNetwork.Instantiate(enemie.name, enemiespawn2.position, Quaternion.identity, 2);
-
+                    posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),Convert.ToInt32(enemiespawn2.position.x));
+                    posy = new Random().Next(Convert.ToInt32(enemiespawn1.position.z),Convert.ToInt32(enemiespawn2.position.z));
+                    
                 }
-                else
-                { 
-                    liste[u] = PhotonNetwork.Instantiate(enemie.name, enemiespawn1.position, Quaternion.identity, 2);
-                }
-
-                liste[u].AddComponent<Rigidbody>();
-                liste[u].AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
+                Debug.Log(posx + "   " + posy);
+                Vector3 pos = new Vector3(posx, enemiespawn2.position.y,posy);
+                GameObject liste= PhotonNetwork.Instantiate(enemie.name, pos, Quaternion.identity, 0);
+                liste.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
+                //liste.GetComponent<Rigidbody>().useGravity = true;
+                liste.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                g = posx;
+                e = posy;
                 u+=1;
             }
-
-            other.tag = "untagged";
         }
     }
 

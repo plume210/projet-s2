@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 3472854730572773238}
   - component: {fileID: 442336676604689700}
   - component: {fileID: -2300660774422239229}
-  - component: {fileID: -7007205792879123595}
   - component: {fileID: 6530433919159566309}
   m_Layer: 0
   m_Name: bebe pingouin obj 1
@@ -189,22 +188,6 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 1
---- !u!54 &-7007205792879123595
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472854730572773228}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!114 &6530433919159566309
 MonoBehaviour:
   m_ObjectHideFlags: 0

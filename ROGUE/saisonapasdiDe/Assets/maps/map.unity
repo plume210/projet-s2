@@ -236,8 +236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2af22d6282df1f34faebb539409bf51d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemiespawn1: {fileID: 1623272206}
-  enemiespawn2: {fileID: 1567662894}
+  enemiespawn1: {fileID: 1567662894}
+  enemiespawn2: {fileID: 1623272206}
   enemie: {fileID: 585015614650539996, guid: 4f3933f3e33261d4b930e9c210c8fd2e, type: 3}
 --- !u!65 &334194437
 BoxCollider:
@@ -387,7 +387,7 @@ PrefabInstance:
     - target: {fileID: 5466430696540855263, guid: 5890bcacd3737430dbbac08cc1265b72,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.133335
+      value: 33.1
       objectReference: {fileID: 0}
     - target: {fileID: 5466430696540855263, guid: 5890bcacd3737430dbbac08cc1265b72,
         type: 3}
@@ -475,7 +475,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567662893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -525, y: 112, z: -2303}
+  m_LocalPosition: {x: -990, y: -20, z: -2702}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -653,13 +653,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623272205}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1351, y: 112, z: 128}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 1949, y: -26.4, z: 932}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &2092206709
 GameObject:
   m_ObjectHideFlags: 0

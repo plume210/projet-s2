@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Photon.Pun;
 
 using Photon.Realtime;
@@ -12,6 +13,8 @@ public class enemiesspawn : MonoBehaviour
     public Transform enemiespawn1;
     public Transform enemiespawn2;
     public GameObject enemie;
+
+    public GameObject type;
     // Start is called before the first frame update
     public void OnTriggerEnter(Collider other)
     {
@@ -19,7 +22,9 @@ public class enemiesspawn : MonoBehaviour
         
         if (other.tag == "Player")
         {
-
+            GameObject[] enemies = new GameObject[2];
+            enemies[1] = enemie;
+            enemies[0] = type;
             int i = new Random().Next(1,4);
             int g = 0;
             int e = 0;
@@ -27,6 +32,7 @@ public class enemiesspawn : MonoBehaviour
             Debug.Log(i);
             while (i > u)
             {
+                int generation = new Random().Next(enemies.Length);
                 int posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),Convert.ToInt32(enemiespawn2.position.x));
                 int posy = new Random().Next(Convert.ToInt32(enemiespawn1.position.z),Convert.ToInt32(enemiespawn2.position.z));
                 while (g == posx && posy == e)
@@ -37,7 +43,7 @@ public class enemiesspawn : MonoBehaviour
                 }
                 Debug.Log(posx + "   " + posy);
                 Vector3 pos = new Vector3(posx, enemiespawn2.position.y,posy);
-                GameObject liste= PhotonNetwork.Instantiate(enemie.name, pos, Quaternion.identity, 0);
+                GameObject liste= PhotonNetwork.Instantiate(enemies[generation].name, pos, Quaternion.identity, 0);
                 liste.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
                 //liste.GetComponent<Rigidbody>().useGravity = true;
                 liste.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;

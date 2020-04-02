@@ -239,6 +239,7 @@ MonoBehaviour:
   enemiespawn1: {fileID: 1567662894}
   enemiespawn2: {fileID: 1623272206}
   enemie: {fileID: 585015614650539996, guid: 4f3933f3e33261d4b930e9c210c8fd2e, type: 3}
+  type: {fileID: 3736556781273002831, guid: ba651e215542c514cbb83d2a7aeb86ad, type: 3}
 --- !u!65 &334194437
 BoxCollider:
   m_ObjectHideFlags: 0

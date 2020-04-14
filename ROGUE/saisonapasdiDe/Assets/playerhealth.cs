@@ -20,7 +20,7 @@ public class playerhealth : MonoBehaviour
 
     public void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Boullet")
+        if (other.gameObject.tag == "Bullet")
         {
             health -= 10;
             txthealt.text = health.ToString();

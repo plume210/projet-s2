@@ -35,7 +35,7 @@ public class enemiesspawn : MonoBehaviour
             int e = 0;
             int u =0;
             Debug.Log(i);
-            while ( 1> u)
+            while ( i> u)
             {
                 int generation = new Random().Next(enemies.Length);
                 int posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),Convert.ToInt32(enemiespawn2.position.x));

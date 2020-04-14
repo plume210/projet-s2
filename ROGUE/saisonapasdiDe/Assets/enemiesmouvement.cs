@@ -4,56 +4,40 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.AI;
+using Photon.Pun;
 
 public class enemiesmouvement : MonoBehaviour
 {
+    public Transform spawn;
+    public GameObject tir;
+    private GameObject _player;
+    private NavMeshAgent _agent;
+    public float startshot;
+    private float  timebtwshot;
+    
 
-    public float speed;
-    public float stoppingDistance;
-    public float retreatDistance;
-
-    private float timeBtwshots;
-    public float startTimeBtwShots;
-
-    public GameObject projectile;
-    private Transform player;
-
-    // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-
-        timeBtwshots = startTimeBtwShots;
+        _agent = GetComponent<NavMeshAgent>();
+        _player = GameObject.FindGameObjectWithTag("Player");
+        timebtwshot = startshot;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        if(Vector2.Distance(transform.position, player.position) > stoppingDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-        }
+        //_agent.SetDestination(_player.transform.position);
+        _agent.destination = _player.transform.position;
+        if (timebtwshot <= 0)
 
-        else if(Vector2.Distance(transform.position, player.position) < stoppingDistance && 
-                Vector2.Distance(transform.position, player.position) > retreatDistance)
         {
-            transform.position = this.transform.position;
+            PhotonNetwork.Instantiate(tir.name, spawn.position, spawn.rotation, 0);
+            timebtwshot = startshot;
         }
-
-        else if(Vector2.Distance(transform.position, player.position) < retreatDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
-        }
-
-        if(timeBtwshots <= 0)
-        {
-            Instantiate(projectile, transform.position, Quaternion.identity);
-            timeBtwshots = startTimeBtwShots;
-        }
-
         else
         {
-            timeBtwshots -= Time.deltaTime;
+            timebtwshot -= Time.deltaTime;
         }
     }
+
+   
 }

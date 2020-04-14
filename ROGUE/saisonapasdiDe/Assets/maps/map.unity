@@ -105,21 +105,21 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 50
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 8
     agentClimb: 0.4
-    ledgeDropHeight: 0
-    maxJumpAcrossDistance: 0
+    ledgeDropHeight: 2
+    maxJumpAcrossDistance: 2
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 16.666666
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 5cbb4c1b1242a6a4f878e94a872df597, type: 2}
 --- !u!4 &72998900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 05fb19f9384a0da4f8aef06d03a759a4,
@@ -238,8 +238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemiespawn1: {fileID: 1567662894}
   enemiespawn2: {fileID: 1623272206}
-  enemie: {fileID: 3736556781273002831, guid: ba651e215542c514cbb83d2a7aeb86ad, type: 3}
-  type: {fileID: 3736556781273002831, guid: ba651e215542c514cbb83d2a7aeb86ad, type: 3}
+  enemie: {fileID: 8244914439209899860, guid: 115bfb879ad5bd648b1a0d0d71c8e77b, type: 3}
+  type: {fileID: 8244914439209899860, guid: 115bfb879ad5bd648b1a0d0d71c8e77b, type: 3}
 --- !u!65 &334194437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -261,7 +261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334194435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 505, y: -78, z: -1146}
+  m_LocalPosition: {x: 576, y: -78, z: -923}
   m_LocalScale: {x: 120, y: 120, z: 120}
   m_Children: []
   m_Father: {fileID: 0}

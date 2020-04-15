@@ -23,6 +23,8 @@ public class Health : MonoBehaviour
         if (col.gameObject.CompareTag("Bullet") && view.IsMine)
         {
             health -= 10;
+            healthBar.sizeDelta = new Vector2(health, healthBar.sizeDelta.y);
+            view.RPC("MajVie", RpcTarget.Others, health);
         }
 
         if (health <= 0)
@@ -30,7 +32,12 @@ public class Health : MonoBehaviour
             health = 0;
             Debug.Log("Dead!");
         }
-        healthBar.sizeDelta = new Vector2(health, healthBar.sizeDelta.y);
+    }
+
+    [PunRPC]
+    void MajVie(int vie)
+    {
+        healthBar.sizeDelta = new Vector2(vie, healthBar.sizeDelta.y);
     }
     
 }

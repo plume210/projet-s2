@@ -393,7 +393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e0879506a9ecbc4c81192d8f7d87711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balled: {fileID: 2129100794709618500, guid: fbf603a1e3a6c434eae886a0b4902bde, type: 3}
+  balled: {fileID: 406736890624378188, guid: f0d8727e207808243ac9805561c40ead, type: 3}
   bulletspawn: {fileID: 3472854730572773217}
   bulletspeed: 3000
   speed: 300
@@ -448,6 +448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBar: {fileID: 614459259}
+  tag: Bullet
 --- !u!1 &3472854730572773231
 GameObject:
   m_ObjectHideFlags: 0

@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 1599151430}
-  player: {fileID: 3472854730572773228, guid: 7839afe842578bf46b4fe1104c4f970d, type: 3}
+  player: {fileID: 4240170325096524758, guid: 26927463c6f384549a5c0b8e1ce9ee2b, type: 3}
   camera: {fileID: 760736057}
   spawn2: {fileID: 102579690}
   enemiespawn1: {fileID: 1567662894}
@@ -201,7 +201,7 @@ Transform:
   m_GameObject: {fileID: 195908129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 383, y: -144, z: -919}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -752,3 +752,77 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &4863948082954456870
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 901640942842354117, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901640942842354117, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.680012
+      objectReference: {fileID: 0}
+    - target: {fileID: 901640942842354117, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901640942842354117, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 901640942842354117, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901640942842354117, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901640942842354117, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 901640942842354117, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 901640942842354117, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901640942842354117, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901640942842354117, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240170325096524758, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: m_Name
+      value: Pingouinanimation finale Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5330557061078495961, guid: 26927463c6f384549a5c0b8e1ce9ee2b,
+        type: 3}
+      propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 26927463c6f384549a5c0b8e1ce9ee2b, type: 3}

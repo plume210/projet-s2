@@ -73,6 +73,7 @@ public class joinscript : MonoBehaviourPunCallbacks
         Myplayer.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
         Myplayer.GetComponent<Rigidbody>().useGravity = true;
         Myplayer.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        Myplayer.transform.Rotate(-90, 0, 0);
 
     }
 

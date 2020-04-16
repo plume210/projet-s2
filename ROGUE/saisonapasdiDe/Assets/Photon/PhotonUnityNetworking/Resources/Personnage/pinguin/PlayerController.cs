@@ -18,12 +18,11 @@ public class PlayerController : MonoBehaviour
     public float bulletspeed = 300.0f;
     public float speed = 300.0f;
     private PhotonView _view;
-    private Camera _camera;
+    
 
     private void Start()
     {
         _view = GetComponent<PhotonView>();
-        _camera = GetComponentInChildren<Camera>();
         anim = GetComponent<Animator>();
     }
 
@@ -40,8 +39,8 @@ public class PlayerController : MonoBehaviour
       
 
             //deplacement
-            transform.Rotate(0, x1, 0);
-            transform.Translate(0, 0, z1);
+            transform.Rotate(0, 0, x1);
+            transform.Translate(-z1, 0, 0);
 
             //tir
             if (Input.GetKeyDown(KeyCode.Space))

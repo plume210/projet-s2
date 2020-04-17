@@ -10,7 +10,9 @@
         <e p="collision" t="Include">
           <e p="collision.cs" t="Include" />
         </e>
+        <e p="enemiesmouvement.cs" t="Include" />
         <e p="enemiesspawn.cs" t="Include" />
+        <e p="Health.cs" t="Include" />
         <e p="joinscript.cs" t="Include" />
         <e p="menu" t="Include">
           <e p="MainMenu.cs" t="Include" />
@@ -356,13 +358,14 @@
             </e>
           </e>
         </e>
-        <e p="playerhealth.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="WebSocket" t="Include">
             <e p="SocketWebTcp.cs" t="Include" />
             <e p="WebSocket.cs" t="Include" />
           </e>
         </e>
+        <e p="tiralliedeplacement.cs" t="Include" />
+        <e p="tirenemideplacement.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

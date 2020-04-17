@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9122895860202802226}
   - component: {fileID: -2612487151869200272}
   - component: {fileID: -5125652931318698839}
+  - component: {fileID: -4964718143975751427}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -131,3 +132,21 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 1
+--- !u!114 &-4964718143975751427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3736556781273002831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec73d71bab909e64fa7381432a2925ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
+  stoppingDistance: 10
+  retreatDistance: 100
+  startTimeBtwShots: 1
+  projectile: {fileID: 2129100794709618500, guid: fbf603a1e3a6c434eae886a0b4902bde,
+    type: 3}

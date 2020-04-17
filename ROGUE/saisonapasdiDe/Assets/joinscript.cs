@@ -16,9 +16,7 @@ public class joinscript : MonoBehaviourPunCallbacks
     public GameObject player;
     public Camera camera;
     public Transform spawn2;
-    public Transform enemiespawn1;
-    public Transform enemiespawn2;
-    public GameObject enemie;
+   
     
     
     // Start is called before the first frame update
@@ -76,5 +74,13 @@ public class joinscript : MonoBehaviourPunCallbacks
 
     }
 
-    
+    public void Update()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        if (players.Length == 0)
+        {
+            //Time.timeScale = 0f;
+           // Application.Quit();
+        }
+    }
 }

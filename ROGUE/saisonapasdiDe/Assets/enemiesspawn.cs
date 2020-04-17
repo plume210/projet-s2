@@ -16,6 +16,11 @@ public class enemiesspawn : MonoBehaviour
 
     public GameObject type;
     // Start is called before the first frame update
+    public void Start()
+    {
+        GetComponent<Collider>().isTrigger = true;
+    }
+
     public void OnTriggerEnter(Collider other)
     {
 
@@ -30,7 +35,7 @@ public class enemiesspawn : MonoBehaviour
             int e = 0;
             int u =0;
             Debug.Log(i);
-            while (i > u)
+            while ( i> u)
             {
                 int generation = new Random().Next(enemies.Length);
                 int posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),Convert.ToInt32(enemiespawn2.position.x));
@@ -51,6 +56,14 @@ public class enemiesspawn : MonoBehaviour
                 e = posy;
                 u+=1;
             }
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            GetComponent<Collider>().isTrigger = false;
         }
     }
 

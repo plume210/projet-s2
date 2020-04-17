@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3324780845346369310}
   - component: {fileID: 4694200434869875243}
   - component: {fileID: 72495034821402296}
-  - component: {fileID: 8537731167179444172}
   - component: {fileID: 8241933256205458890}
   - component: {fileID: 7537435154667587302}
-  - component: {fileID: 8381015893082357314}
+  - component: {fileID: 1254053538149437870}
+  - component: {fileID: 1482361944253022549}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -82,20 +82,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &8537731167179444172
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 585015614650539996}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8241933256205458890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,10 +97,10 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 0
+  Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: 7537435154667587302}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -133,7 +119,20 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 1
---- !u!114 &8381015893082357314
+--- !u!135 &1254053538149437870
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585015614650539996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 12
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1482361944253022549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,16 +141,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 585015614650539996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Script: {fileID: 11500000, guid: ec73d71bab909e64fa7381432a2925ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 0
-  OwnershipTransfer: 0
-  ObservedComponents:
-  - {fileID: 0}
-  viewIdField: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
+  speed: 2
+  stoppingDistance: 3
+  retreatDistance: 3
+  startTimeBtwShots: 3
+  projectile: {fileID: 2129100794709618500, guid: fbf603a1e3a6c434eae886a0b4902bde,
+    type: 3}

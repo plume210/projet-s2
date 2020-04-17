@@ -75,6 +75,7 @@
      <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\Resources\Personnage\armes\Enemie.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\Resources\Personnage\pinguin\PlayerController.cs" />
+     <Compile Include="Assets\playerhealth.cs" />
      <Compile Include="Assets\tiralliedeplacement.cs" />
      <Compile Include="Assets\tirenemideplacement.cs" />
      <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />

@@ -27,8 +27,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
-    Unity.Rider.Editor.dll:
-    - Packages.Rider.Editor.RiderScriptEditorData
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -42,8 +40,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
-    com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/Scenes/Menubien.unity:
     - Class: 1
@@ -1794,4 +1790,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menubien.unity
   - Assets/maps/map.unity
-  playerPath: C:/Users/ludov/projet-s2/saisonapasdiDe_Data/saisonapasdiDe.exe
+  playerPath: C:/Users/ludov/projet-s2/saisonapasdiDe/saisonapasdiDe.exe

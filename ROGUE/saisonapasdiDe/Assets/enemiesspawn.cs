@@ -46,7 +46,6 @@ public class enemiesspawn : MonoBehaviour
                     posy = new Random().Next(Convert.ToInt32(enemiespawn1.position.z),Convert.ToInt32(enemiespawn2.position.z));
                     
                 }
-                Debug.Log(posx + "   " + posy);
                 Vector3 pos = new Vector3(posx, enemiespawn2.position.y,posy);
                 GameObject liste= PhotonNetwork.Instantiate(enemies[generation].name, pos, Quaternion.identity, 0);
                 liste.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;

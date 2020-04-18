@@ -83,7 +83,8 @@ public class joinscript : MonoBehaviourPunCallbacks
         nbplayers = GameObject.FindGameObjectsWithTag("Player");
         if (Time.realtimeSinceStartup > 30f && nbplayers.Length == 0)
         {
-            Application.Quit();
+            Application.Quit(); 
+            ApplicationOnquitting();
         }
     }
 

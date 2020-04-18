@@ -14,22 +14,20 @@ public class enemiesmouvement : MonoBehaviour
     private NavMeshAgent _agent;
     public float startshot;
     private float  timebtwshot;
-    public float speed;
-    private Vector3 target;
-    private Transform joueur;
+ 
     
     
 
     public void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
-        timebtwshot = startshot;
+        timebtwshot = startshot; 
        
     }
 
     
 
-    public void sort(GameObject[] bruh)
+    public void sort(GameObject[] bruh) // trie par ordre croissant de distance
     {
         int i = 0;
         
@@ -59,13 +57,16 @@ public class enemiesmouvement : MonoBehaviour
     public void Update()
     {
         _player = GameObject.FindGameObjectsWithTag("Player");
+        
         sort(_player);   
+        Debug.Log(_player.Length);
         //_agent.SetDestination(_player.transform.position);
         _agent.destination = _player[0].transform.position;
         if (timebtwshot <= 0)
 
         { 
             GameObject bullet = Instantiate(tir, spawn.position, Quaternion.identity) as GameObject;
+            bullet.AddComponent<Rigidbody>();
             timebtwshot = startshot;
         }
         else

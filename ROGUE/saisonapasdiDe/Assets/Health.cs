@@ -34,8 +34,7 @@ public class Health : MonoBehaviour
         {
             health = 0;
             Debug.Log("Dead!");
-            Destroy(gameObject);
-            
+            PhotonNetwork.Destroy(gameObject);
         }
     }
 

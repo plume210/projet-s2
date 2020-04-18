@@ -189,9 +189,6 @@ MonoBehaviour:
   player: {fileID: 3472854730572773228, guid: 7839afe842578bf46b4fe1104c4f970d, type: 3}
   camera: {fileID: 760736057}
   spawn2: {fileID: 102579690}
-  enemiespawn1: {fileID: 1567662894}
-  enemiespawn2: {fileID: 1623272206}
-  enemie: {fileID: 585015614650539996, guid: 4f3933f3e33261d4b930e9c210c8fd2e, type: 3}
 --- !u!4 &195908132
 Transform:
   m_ObjectHideFlags: 0
@@ -812,7 +809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092206709}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 85.8, y: 159.3, z: -31}
+  m_LocalPosition: {x: 657, y: 1520, z: -1020}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

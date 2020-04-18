@@ -27,8 +27,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
-    Unity.Rider.Editor.dll:
-    - Packages.Rider.Editor.RiderScriptEditorData
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -42,8 +40,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
-    com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/Scenes/Menubien.unity:
     - Class: 1
@@ -83,65 +79,65 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9792}
+      Script: {instanceID: 9768}
     - Class: 114
-      Script: {instanceID: 9840}
+      Script: {instanceID: 9816}
+    - Class: 114
+      Script: {instanceID: 9950}
     - Class: 114
       Script: {instanceID: 9974}
     - Class: 114
-      Script: {instanceID: 9998}
+      Script: {instanceID: 10018}
     - Class: 114
-      Script: {instanceID: 10042}
+      Script: {instanceID: 10070}
     - Class: 114
-      Script: {instanceID: 10094}
+      Script: {instanceID: 10522}
     - Class: 114
-      Script: {instanceID: 10546}
+      Script: {instanceID: 10548}
     - Class: 114
-      Script: {instanceID: 10572}
+      Script: {instanceID: 10612}
     - Class: 114
-      Script: {instanceID: 10636}
+      Script: {instanceID: 10688}
     - Class: 114
-      Script: {instanceID: 10712}
+      Script: {instanceID: 10954}
     - Class: 114
-      Script: {instanceID: 10978}
+      Script: {instanceID: 11034}
     - Class: 114
-      Script: {instanceID: 11058}
+      Script: {instanceID: 11074}
     - Class: 114
-      Script: {instanceID: 11098}
+      Script: {instanceID: 11164}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 11220}
     - Class: 114
-      Script: {instanceID: 11244}
+      Script: {instanceID: 11310}
     - Class: 114
-      Script: {instanceID: 11334}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 11422}
+      Script: {instanceID: 11408}
     - Class: 114
-      Script: {instanceID: 11432}
+      Script: {instanceID: 11604}
     - Class: 114
-      Script: {instanceID: 11628}
+      Script: {instanceID: 11638}
     - Class: 114
-      Script: {instanceID: 11662}
+      Script: {instanceID: 11648}
     - Class: 114
-      Script: {instanceID: 11672}
+      Script: {instanceID: 11654}
     - Class: 114
-      Script: {instanceID: 11678}
+      Script: {instanceID: 11658}
     - Class: 114
-      Script: {instanceID: 11682}
+      Script: {instanceID: 11800}
     - Class: 114
-      Script: {instanceID: 11824}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12230}
+      Script: {instanceID: 12296}
     - Class: 114
-      Script: {instanceID: 12320}
+      Script: {instanceID: 12304}
     - Class: 114
-      Script: {instanceID: 12328}
+      Script: {instanceID: 12344}
     - Class: 114
-      Script: {instanceID: 12368}
+      Script: {instanceID: 12352}
     - Class: 114
-      Script: {instanceID: 12376}
-    - Class: 114
-      Script: {instanceID: 17066}
+      Script: {instanceID: 12384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -202,37 +198,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9792}
+      Script: {instanceID: 9768}
     - Class: 114
-      Script: {instanceID: 9840}
+      Script: {instanceID: 9816}
     - Class: 114
-      Script: {instanceID: 10094}
+      Script: {instanceID: 10070}
     - Class: 114
-      Script: {instanceID: 10184}
+      Script: {instanceID: 10160}
     - Class: 114
-      Script: {instanceID: 10572}
+      Script: {instanceID: 10548}
     - Class: 114
-      Script: {instanceID: 10636}
+      Script: {instanceID: 10612}
     - Class: 114
-      Script: {instanceID: 11058}
+      Script: {instanceID: 11034}
     - Class: 114
-      Script: {instanceID: 11066}
+      Script: {instanceID: 11042}
     - Class: 114
-      Script: {instanceID: 11628}
+      Script: {instanceID: 11604}
     - Class: 114
-      Script: {instanceID: 11644}
+      Script: {instanceID: 11620}
     - Class: 114
-      Script: {instanceID: 11678}
+      Script: {instanceID: 11654}
     - Class: 114
-      Script: {instanceID: 11824}
+      Script: {instanceID: 11800}
     - Class: 114
-      Script: {instanceID: 12230}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12320}
+      Script: {instanceID: 12296}
     - Class: 114
-      Script: {instanceID: 12328}
+      Script: {instanceID: 12304}
     - Class: 114
-      Script: {instanceID: 17066}
+      Script: {instanceID: 12384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -1306,7 +1302,7 @@ ScriptsOnlyBuild:
     className: PropertyCell
   - hash:
       serializedVersion: 2
-      Hash: 83eadffed1d1b9a2a19efdfd89a25aa8
+      Hash: 8df6b364626f4d01e658561f21bcfcf3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: enemiesmouvement
@@ -1348,7 +1344,7 @@ ScriptsOnlyBuild:
     className: PlayerManager
   - hash:
       serializedVersion: 2
-      Hash: 7c8816bfe77bb44a21570e8be4e62b7e
+      Hash: cb700f4199b0ba81a62958bcbf908c65
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Health
@@ -1768,6 +1764,12 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   - hash:
       serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: tiralliedeplacement
+  - hash:
+      serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1784,14 +1786,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: tiralliedeplacement
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menubien.unity
   - Assets/maps/map.unity
-  playerPath: C:/Users/ludov/Desktop/saisonapasdiDe.exe
+  playerPath: C:/Users/ludov/projet-s2/saisonapasdiDe/saisonapasdiDe.exe

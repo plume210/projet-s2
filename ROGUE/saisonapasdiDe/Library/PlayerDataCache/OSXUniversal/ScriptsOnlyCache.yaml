@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - enemiesmouvement
     - enemiesspawn
     - joinscript
+    - tiralliedeplacement
     - tirenemideplacement
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
@@ -20,16 +21,12 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
-    Unity.Rider.Editor.dll:
-    - Packages.Rider.Editor.RiderScriptEditorData
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -141,6 +138,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12344}
     - Class: 114
       Script: {instanceID: 12352}
+    - Class: 114
+      Script: {instanceID: 12384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -230,9 +229,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12296}
     - Class: 114
       Script: {instanceID: 12304}
+    - Class: 114
+      Script: {instanceID: 12384}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -1323,7 +1322,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomNameProperty
   - hash:
       serializedVersion: 2
-      Hash: 4758696bab264ddfe3f80164b2f9c862
+      Hash: 2fe8183ad9ec8e4712c79716a2d8d42d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: joinscript
@@ -1347,7 +1346,7 @@ ScriptsOnlyBuild:
     className: PlayerManager
   - hash:
       serializedVersion: 2
-      Hash: 7c8816bfe77bb44a21570e8be4e62b7e
+      Hash: cb700f4199b0ba81a62958bcbf908c65
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Health
@@ -1765,6 +1764,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: tiralliedeplacement
   - hash:
       serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0

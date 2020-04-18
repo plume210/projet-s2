@@ -40,6 +40,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
+    com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/Scenes/Menubien.unity:
     - Class: 1
@@ -1302,7 +1304,7 @@ ScriptsOnlyBuild:
     className: PropertyCell
   - hash:
       serializedVersion: 2
-      Hash: 8df6b364626f4d01e658561f21bcfcf3
+      Hash: 83eadffed1d1b9a2a19efdfd89a25aa8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: enemiesmouvement
@@ -1790,4 +1792,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menubien.unity
   - Assets/maps/map.unity
-  playerPath: C:/Users/ludov/projet-s2/saisonapasdiDe/saisonapasdiDe.exe
+  playerPath: C:/Users/ludov/projet-s2/ROGUE/multi/saisonapasdiDe.exe

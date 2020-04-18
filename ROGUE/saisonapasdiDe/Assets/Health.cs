@@ -10,6 +10,8 @@ public class Health : MonoBehaviour
     public int health = 100;
     public RectTransform healthBar;
     private PhotonView view;
+
+    public string tag;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +22,10 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Bullet") && view.IsMine)
+        if (col.gameObject.CompareTag(tag) && view.IsMine)
         {
             health -= 10;
+            Debug.Log(health);
             healthBar.sizeDelta = new Vector2(health, healthBar.sizeDelta.y);
             view.RPC("MajVie", RpcTarget.Others, health);
         }
@@ -31,6 +34,7 @@ public class Health : MonoBehaviour
         {
             health = 0;
             Debug.Log("Dead!");
+            Destroy(gameObject);
         }
     }
 

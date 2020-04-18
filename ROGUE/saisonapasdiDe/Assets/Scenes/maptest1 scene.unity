@@ -815,3 +815,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &8813285965657417457
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 844068046040939122, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 844068046040939122, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.680012
+      objectReference: {fileID: 0}
+    - target: {fileID: 844068046040939122, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 844068046040939122, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 844068046040939122, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 844068046040939122, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 844068046040939122, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 844068046040939122, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 844068046040939122, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 844068046040939122, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 844068046040939122, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462472062561273953, guid: 8d5e80563244a8a47bd5b1709b28cf33,
+        type: 3}
+      propertyPath: m_Name
+      value: Pengu anim recul
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d5e80563244a8a47bd5b1709b28cf33, type: 3}

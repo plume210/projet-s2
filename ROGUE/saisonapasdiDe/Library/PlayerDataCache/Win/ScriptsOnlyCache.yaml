@@ -1792,4 +1792,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menubien.unity
   - Assets/maps/map.unity
-  playerPath: C:/Users/Alexandre/projet-s2/ROGUE/saisonapasdiDe/saisonapasdiDe.exe
+  playerPath: C:/Users/ludov/projet-s2/ROGUE/multi/saisonapasdiDe.exe

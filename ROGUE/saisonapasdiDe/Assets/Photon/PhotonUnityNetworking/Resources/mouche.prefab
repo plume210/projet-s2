@@ -344,10 +344,11 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 0
+  Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: -4773643396376741020}
+  - {fileID: -4773643396376741020}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -381,6 +382,7 @@ MonoBehaviour:
   spawn: {fileID: 718958871415785859}
   tir: {fileID: 2129100794709618500, guid: fbf603a1e3a6c434eae886a0b4902bde, type: 3}
   startshot: 1
+  speed: 0
 --- !u!195 &9200888638893470115
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -1,10 +1,12 @@
 ﻿
 using System;
 using System.Collections;
+using System.Linq;
 using System.Net;
 using System.Security.Cryptography;
 using Photon.Pun;
 using Photon.Realtime;
+using TMPro;
 using UnityEngine;
 
 using Random = System.Random;
@@ -16,9 +18,10 @@ public class joinscript : MonoBehaviourPunCallbacks
     public GameObject player;
     public Camera camera;
     public Transform spawn2;
-   
+    private  GameObject[] nbplayers;
     
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +49,8 @@ public class joinscript : MonoBehaviourPunCallbacks
     {
 
         StartCoroutine(Spawnplayer());
+       
+        
         Debug.Log("Dématérialisation !!!!!!");
     }
     IEnumerator Spawnplayer()
@@ -71,16 +76,19 @@ public class joinscript : MonoBehaviourPunCallbacks
         Myplayer.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
         Myplayer.GetComponent<Rigidbody>().useGravity = true;
         Myplayer.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-
     }
 
     public void Update()
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-        if (players.Length == 0)
+        nbplayers = GameObject.FindGameObjectsWithTag("Player");
+        if (Time.realtimeSinceStartup > 30f && nbplayers.Length == 0)
         {
-            //Time.timeScale = 0f;
-           // Application.Quit();
+            Application.Quit();
         }
+    }
+
+    private void ApplicationOnquitting()
+    {
+        Debug.Log("arret");
     }
 }

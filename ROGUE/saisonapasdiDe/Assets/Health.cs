@@ -30,11 +30,12 @@ public class Health : MonoBehaviour
             view.RPC("MajVie", RpcTarget.Others, health);
         }
 
-        if (health <= 0)
+        if (health <= 0 && view.IsMine)
         {
             health = 0;
             Debug.Log("Dead!");
             Destroy(gameObject);
+            
         }
     }
 

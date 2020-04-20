@@ -9,7 +9,6 @@ ScriptsOnlyBuild:
     - enemiesmouvement
     - enemiesspawn
     - joinscript
-    - tiralliedeplacement
     - tirenemideplacement
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
@@ -27,6 +26,14 @@ ScriptsOnlyBuild:
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -138,8 +145,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12344}
     - Class: 114
       Script: {instanceID: 12352}
-    - Class: 114
-      Script: {instanceID: 12384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -170,7 +175,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 225
       Script: {instanceID: 0}
-    Assets/maps/map.unity:
+    Assets/Scenes/maptest1 scene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -193,7 +198,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -229,8 +242,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12296}
     - Class: 114
       Script: {instanceID: 12304}
-    - Class: 114
-      Script: {instanceID: 12384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -1010,7 +1021,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomPropertiesListedInLobbyProperty
   - hash:
       serializedVersion: 2
-      Hash: 1f051cf315b40db5ea3471c074c1339b
+      Hash: 2c08decac65d6be7538f5ceab7362dd6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraSmooth
@@ -1791,5 +1802,5 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menubien.unity
-  - Assets/maps/map.unity
-  playerPath: C:/Users/ludov/projet-s2/ROGUE/multi/saisonapasdiDe.exe
+  - Assets/Scenes/maptest1 scene.unity
+  playerPath: D:/projet-s2/test/saisonapasdiDe.exe

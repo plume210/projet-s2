@@ -24,6 +24,8 @@ public class CameraSmooth : MonoBehaviour {
      // How much we 
      public float heightDamping = 2.0f;
      public float rotationDamping = 3.0f;
+     public float decalage;
+     
  
      void  LateUpdate ()
      {
@@ -36,6 +38,7 @@ public class CameraSmooth : MonoBehaviour {
          float wantedHeight = target.position.y + height;
          float currentRotationAngle = transform.eulerAngles.y;
          float currentHeight = transform.position.y;
+         float positionx = target.position.x + decalage;
      
          // Damp the rotation around the y-axis
          currentRotationAngle = Mathf.LerpAngle (currentRotationAngle, wantedRotationAngle, rotationDamping * Time.deltaTime);
@@ -48,7 +51,7 @@ public class CameraSmooth : MonoBehaviour {
      
          // Set the position of the camera on the x-z plane to:
          // distance meters behind the target
-         transform.position = target.position;
+         transform.position = new Vector3(positionx, target.position.y,target.position.z);
          transform.position -= currentRotation * Vector3.forward * distance;
  
          // Set the height of the camera

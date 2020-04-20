@@ -13,7 +13,7 @@ public class enemiesspawn : MonoBehaviour
     public Transform enemiespawn1;
     public Transform enemiespawn2;
     public GameObject enemie;
-
+    private string player = "Player";
     public GameObject type;
     // Start is called before the first frame update
     public void Start()
@@ -25,7 +25,7 @@ public class enemiesspawn : MonoBehaviour
     {
 
         
-        if (other.tag == "Player")
+        if (other.tag == player)
         {
             GameObject[] enemies = new GameObject[2];
             enemies[1] = enemie;
@@ -60,9 +60,9 @@ public class enemiesspawn : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == player)
         {
-            GetComponent<Collider>().isTrigger = false;
+            player = "respawn";
         }
     }
 

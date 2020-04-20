@@ -57,11 +57,16 @@ public class enemiesmouvement : MonoBehaviour
     public void Update()
     {
         _player = GameObject.FindGameObjectsWithTag("Player");
-        
+        if (_player.Length == 0)
+        {
+            Application.Quit();
+        }
+
         sort(_player);   
         Debug.Log(_player.Length);
+        _agent.SetDestination(_player[0].transform.position);
         //_agent.SetDestination(_player.transform.position);
-        _agent.destination = _player[0].transform.position;
+        
         if (timebtwshot <= 0)
 
         { 

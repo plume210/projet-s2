@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/maptest1 scene.unity
+- path: Assets/Scenes/MAPBIEN.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

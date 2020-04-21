@@ -82,15 +82,15 @@ public class joinscript : MonoBehaviourPunCallbacks
 
     }
 
-    public void Update()
-    {
-        nbplayers = GameObject.FindGameObjectsWithTag("Player");
-        if (Time.realtimeSinceStartup > 30f && nbplayers.Length == 0)
-        {
-            Application.Quit(); 
+   // public void Update()
+   // {
+    //    nbplayers = GameObject.FindGameObjectsWithTag("Player");
+    //    if (Time.realtimeSinceStartup > 30f && nbplayers.Length == 0)
+    //    {
+   //         Application.Quit(); 
            
-        }
-    }
+   //     }
+  //  }
 
     private void ApplicationOnquitting()
     {

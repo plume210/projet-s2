@@ -23,52 +23,52 @@ public class enemiesspawn : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+       
 
-        
-        if (other.tag == player)
+        if (player == "Player")
         {
-            GameObject[] enemies = new GameObject[2];
-            enemies[1] = enemie;
-            enemies[0] = type;
-            int i = new Random().Next(1,4);
-            int g = 0;
-            int e = 0;
-            int u =0;
-            Debug.Log(i);
-            while ( i> u)
+            if (other.tag == player)
             {
-                int generation = new Random().Next(enemies.Length);
-                int posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),Convert.ToInt32(enemiespawn2.position.x));
-                int posy = new Random().Next(Convert.ToInt32(enemiespawn1.position.z),Convert.ToInt32(enemiespawn2.position.z));
-                while (g == posx && posy == e)
+                GameObject[] enemiestype = new GameObject[2]; // pour selectionner le type denemies
+                enemiestype[1] = enemie;
+                enemiestype[0] = type;
+                int i = new Random().Next(1,4);
+                int g = 0;
+                int e = 0;
+                int u =0;
+                Debug.Log(i);
+                while ( i> u)
                 {
-                    posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),Convert.ToInt32(enemiespawn2.position.x));
-                    posy = new Random().Next(Convert.ToInt32(enemiespawn1.position.z),Convert.ToInt32(enemiespawn2.position.z));
+                    int generation = new Random().Next(enemiestype.Length);
+                    int posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),Convert.ToInt32(enemiespawn2.position.x));// coord x aleatoitre
+                    int posy = new Random().Next(Convert.ToInt32(enemiespawn1.position.z),Convert.ToInt32(enemiespawn2.position.z));// coord z aleatoire
+                    while (g == posx && posy == e)
+                    {
+                        posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),Convert.ToInt32(enemiespawn2.position.x));
+                        posy = new Random().Next(Convert.ToInt32(enemiespawn1.position.z),Convert.ToInt32(enemiespawn2.position.z));
                     
+                    }
+                    Vector3 pos = new Vector3(posx, enemiespawn2.position.y,posy); // spawn du joueur
+                    GameObject liste= PhotonNetwork.Instantiate(enemiestype[generation].name, pos, Quaternion.identity, 0);// creer le joueur
+                    liste.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
+                    //liste.GetComponent<Rigidbody>().useGravity = true;
+                    liste.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                    g = posx;
+                    e = posy;
+                    u+=1;
                 }
-                Vector3 pos = new Vector3(posx, enemiespawn2.position.y,posy);
-                GameObject liste= PhotonNetwork.Instantiate(enemies[generation].name, pos, Quaternion.identity, 0);
-                liste.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
-                //liste.GetComponent<Rigidbody>().useGravity = true;
-                liste.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-                g = posx;
-                e = posy;
-                u+=1;
             }
         }
     }
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.tag == player)
+        GameObject[]
+            enemiesliste = GameObject.FindGameObjectsWithTag("enemies"); // recupere le nombre denemies dans la map
+        if (enemiesliste.Length >= 4)
         {
-            player = "respawn";
+            player = "Respawn";
         }
-    }
-
-    // Update is called once per frame
-    public void Update()
-    {
-        
-    }
+    } // Update is called once per frame
+   
 }

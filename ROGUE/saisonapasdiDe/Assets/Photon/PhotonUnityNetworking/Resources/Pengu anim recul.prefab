@@ -570,11 +570,11 @@ GameObject:
   - component: {fileID: 844068046040939122}
   - component: {fileID: 7294908544712939272}
   - component: {fileID: -6492933545455888456}
-  - component: {fileID: 1098387399415484803}
   - component: {fileID: 4176684041691237343}
   - component: {fileID: -7484750406747742102}
   - component: {fileID: 5338137676509010320}
   - component: {fileID: -1893097659930253338}
+  - component: {fileID: 5402752863311865806}
   m_Layer: 0
   m_Name: Pengu anim recul
   m_TagString: Player
@@ -629,25 +629,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.009297052
-  m_Height: 0.018594101
+  m_Radius: 0.011495747
+  m_Height: 0.022991491
   m_Direction: 1
-  m_Center: {x: 0.0056046057, y: -0.0013406985, z: 0.009725651}
---- !u!114 &1098387399415484803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4462472062561273953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5908f18b4d8674ba5a010aced2d1a078, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 700
-  healthBar: {fileID: 7721624879407095630}
-  tag: Bullet
+  m_Center: {x: 0, y: -0.0019219193, z: 0.01}
 --- !u!114 &4176684041691237343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,6 +698,21 @@ MonoBehaviour:
   bulletspawn: {fileID: 3894091608878659465}
   bulletspeed: 300
   speed: 300
+--- !u!114 &5402752863311865806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4462472062561273953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908f18b4d8674ba5a010aced2d1a078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  healthBar: {fileID: 443243152001510406}
+  tag: Bullet
 --- !u!1 &6079654886619362220
 GameObject:
   m_ObjectHideFlags: 0

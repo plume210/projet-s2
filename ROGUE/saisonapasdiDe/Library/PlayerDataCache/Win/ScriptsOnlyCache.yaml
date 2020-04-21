@@ -26,8 +26,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
-    Unity.Rider.Editor.dll:
-    - Packages.Rider.Editor.RiderScriptEditorData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -1803,4 +1801,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menubien.unity
   - Assets/Scenes/maptest1 scene.unity
-  playerPath: D:/projet-s2/test/saisonapasdiDe.exe
+  playerPath: D:/projet-s2/ANIMATION/saisonapasdiDe.exe

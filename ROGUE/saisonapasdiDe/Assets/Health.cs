@@ -27,7 +27,7 @@ public class Health : MonoBehaviour
             health -= 10;
             Debug.Log(health);
             healthBar.sizeDelta = new Vector2(health, healthBar.sizeDelta.y);
-            view.RPC("MajVie", RpcTarget.Others, health);
+            view.RPC("MajVie ", RpcTarget.Others,health);
         }
 
         if (health <= 0 && view.IsMine)
@@ -39,7 +39,7 @@ public class Health : MonoBehaviour
     }
 
     [PunRPC]
-    void MajVie(int vie)
+    void MajVie(int vie )
     {
         healthBar.sizeDelta = new Vector2(vie, healthBar.sizeDelta.y);
     }

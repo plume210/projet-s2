@@ -39,6 +39,10 @@ public class PlayerController : MonoBehaviour
             
             anim.SetFloat("vertical",Input.GetAxis("Vertical"));
             anim.SetFloat("spacebar",space);
+            _view.RPC("animation", RpcTarget.Others,"vertical",z1);
+            _view.RPC("animation", RpcTarget.Others,"spacebar",space);
+           
+           
             
             transform.Rotate(0, 0, x1);
             transform.Translate(-z1, 0, 0);
@@ -49,5 +53,12 @@ public class PlayerController : MonoBehaviour
                 bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bulletspeed;
             }
         }
+    }
+
+    [PunRPC]
+    void animation( string nom, float touch)
+    
+    {
+        anim.SetFloat(nom,touch);
     }
 }

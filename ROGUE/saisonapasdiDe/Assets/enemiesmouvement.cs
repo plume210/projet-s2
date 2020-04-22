@@ -5,6 +5,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.AI;
 using Photon.Pun;
+using Photon.Realtime;
 
 public class enemiesmouvement : MonoBehaviour
 {
@@ -14,58 +15,53 @@ public class enemiesmouvement : MonoBehaviour
     private NavMeshAgent _agent;
     public float startshot;
     private float  timebtwshot;
- 
-    
-    
-
+    private PhotonView view;
     public void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
         timebtwshot = startshot; 
-       
+        view = GetComponent<PhotonView>();
     }
 
-    
+   
 
-    public void sort(GameObject[] bruh) // trie par ordre croissant de distance
+    public int sort2(GameObject[] joueurs)
     {
-        int i = 0;
-        
-        while (i<bruh.Length-2)
+        float distance = Vector3.Distance(joueurs[0].transform.position, transform.position);
+        int j = 0;
+        for (int i = 0; i < joueurs.Length; i++)
         {
-            float distance = Vector3.Distance(bruh[i].transform.position, transform.position);
-            float distance2 = Vector3.Distance(bruh[i+1].transform.position, transform.position); 
-            if (distance>distance2)
+            float distance2 = Vector3.Distance(joueurs[i].transform.position, transform.position);
+            if (distance2<distance)
             {
-                (bruh[i], bruh[i + 1]) = (bruh[i + 1], bruh[i]);
-                if (i==0)
-                {
-                    i += 1;
-                }
-                else
-                {
-                    i = i - 1;    
-                }
-                
+                distance = distance2;
+                j = i;
             }
-            else
-            {
-                i += 1;
-            }
+            
         }
+
+        return j;
+
     }
     public void Update()
     {
+      view.RPC("deplacementandtir", RpcTarget.All);
+    }
+
+    [PunRPC]
+    void deplacementandtir()
+    {
+      
         _player = GameObject.FindGameObjectsWithTag("Player");
         if (_player.Length == 0)
         {
             Application.Quit();
         }
+      
+        
 
-        sort(_player);   
-        Debug.Log(_player.Length);
-        _agent.SetDestination(_player[0].transform.position);
-        //_agent.SetDestination(_player.transform.position);
+        _agent.SetDestination(_player[sort2(_player)].transform.position);
+       
         
         if (timebtwshot <= 0)
 

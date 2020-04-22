@@ -68,11 +68,11 @@
      <Compile Include="Assets\Photon\PhotonChat\Code\ChatState.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Code\ChatUserStatus.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Code\IChatClientListener.cs" />
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/ludov/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/ludov/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/ludov/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/ludov/2019.2.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

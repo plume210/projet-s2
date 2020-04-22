@@ -291,7 +291,6 @@ GameObject:
   - component: {fileID: 4770388247398615130}
   - component: {fileID: 9200888638893470115}
   - component: {fileID: 4675557146610975235}
-  - component: {fileID: -2280254953864190599}
   m_Layer: 0
   m_Name: mouche
   m_TagString: enemies
@@ -348,7 +347,6 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: -4773643396376741020}
   - {fileID: -4773643396376741020}
   viewIdField: 0
   InstantiationId: 0
@@ -420,25 +418,6 @@ MonoBehaviour:
   health: 100
   healthBar: {fileID: 4974627870435913579}
   tag: AllyBullet
---- !u!95 &-2280254953864190599
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8244914439209899860}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 37d2f059ac979ed47bbe6f9462627c8a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &9039895173736814586
 GameObject:
   m_ObjectHideFlags: 0

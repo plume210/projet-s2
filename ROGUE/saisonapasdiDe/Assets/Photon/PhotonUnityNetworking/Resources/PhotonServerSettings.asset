@@ -39,5 +39,6 @@ MonoBehaviour:
   - spawnenemie
   - animation
   - spawnenemy
+  - updatehealth
   DisableAutoOpenWizard: 1
   ShowSettings: 0

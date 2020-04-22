@@ -55,18 +55,12 @@ public class enemiesmouvement : MonoBehaviour
         _player = GameObject.FindGameObjectsWithTag("Player");
         if (_player.Length == 0)
         {
-            Application.Quit();
+           // Application.Quit();
         }
-      
-        
-
         _agent.SetDestination(_player[sort2(_player)].transform.position);
-       
-        
         if (timebtwshot <= 0)
-
         { 
-            GameObject bullet = Instantiate(tir, spawn.position, Quaternion.identity) as GameObject;
+            GameObject bullet = Instantiate(tir, spawn.position, Quaternion.identity);
             bullet.AddComponent<Rigidbody>();
             timebtwshot = startshot;
         }

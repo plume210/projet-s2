@@ -1,14 +1,17 @@
 ﻿
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Security.Cryptography;
+using System.Threading;
 using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
+using Unity.Collections;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 using Random = System.Random;
 
 
@@ -20,15 +23,19 @@ public class joinscript : MonoBehaviourPunCallbacks
     public Transform spawn2;
     private GameObject[] nbplayers;
    
+  
 
 
     // Start is called before the first frame update
     void Start()
     {
        
+        
+       
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.ConnectUsingSettings();
         Debug.Log("connected to " + PhotonNetwork.CloudRegion);
+        
     }
 
     public override void OnConnectedToMaster()
@@ -44,20 +51,19 @@ public class joinscript : MonoBehaviourPunCallbacks
         //a changer pour le multi ou le solo
         PhotonNetwork.JoinOrCreateRoom("essai", roomOptions, TypedLobby.Default);
         Debug.Log("Creating room: " + PhotonNetwork.CurrentRoom);
-        //PhotonNetwork.JoinRoom("Room");
+       
         Debug.Log("Joined " + PhotonNetwork.CurrentRoom);
     }
 
     public override void OnJoinedRoom()
     {
-        
+       
         StartCoroutine(Spawnplayer());
         Debug.Log(PhotonNetwork.CurrentRoom.Players.Count);
-        
-
-
         Debug.Log("Dématérialisation !!!!!!");
+       
     }
+    
 
     IEnumerator Spawnplayer()
     {
@@ -84,5 +90,5 @@ public class joinscript : MonoBehaviourPunCallbacks
         Myplayer.GetComponent<Rigidbody>().useGravity = true;
         Myplayer.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
     }
-   
+     
 }

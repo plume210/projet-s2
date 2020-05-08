@@ -18,7 +18,7 @@ public class tiralliedeplacement : MonoBehaviour
 
     public void Update()
     {
-        player = GameObject.FindGameObjectsWithTag("Enemies");
+        player = GameObject.FindGameObjectsWithTag("enemies");
         for (int i = 0; i < player.Length; i++)
         {
             target.Append(player[i].transform.position);
@@ -48,7 +48,7 @@ public class tiralliedeplacement : MonoBehaviour
 
     public void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Enemies")
+        if (other.gameObject.tag == "enemies")
         {
             DestroyProjectile();
         }

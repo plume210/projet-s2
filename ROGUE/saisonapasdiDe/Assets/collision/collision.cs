@@ -7,7 +7,7 @@ public class collision : MonoBehaviour
 {
     void OnCollisionEnter(Collision other)
     {
-        if (other.transform.tag == "Respawn")
+        if (other.transform.tag == "Player")
         {
             Vector3 up = transform.TransformDirection(Vector3.up);
 

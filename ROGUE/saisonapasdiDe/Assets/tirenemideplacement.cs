@@ -44,10 +44,9 @@ public class tirenemideplacement : MonoBehaviour
 
     public void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Player")
-        {
+        
             DestroyProjectile();
-        }
+        
     }
 
     public void DestroyProjectile()

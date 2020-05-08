@@ -37,11 +37,8 @@ public class enemiesmouvement : MonoBehaviour
                 distance = distance2;
                 j = i;
             }
-            
         }
-
         return j;
-
     }
     public void Update()
     {
@@ -51,12 +48,8 @@ public class enemiesmouvement : MonoBehaviour
     [PunRPC]
     void deplacementandtir()
     {
-      
         _player = GameObject.FindGameObjectsWithTag("Player");
-        if (_player.Length == 0)
-        {
-           // Application.Quit();
-        }
+        
         _agent.SetDestination(_player[sort2(_player)].transform.position);
         if (timebtwshot <= 0)
         { 

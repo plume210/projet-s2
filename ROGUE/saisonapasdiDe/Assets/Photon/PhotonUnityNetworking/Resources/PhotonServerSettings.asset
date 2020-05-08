@@ -40,5 +40,7 @@ MonoBehaviour:
   - animation
   - spawnenemy
   - updatehealth
+  - waves
+  - enemispawn
   DisableAutoOpenWizard: 1
   ShowSettings: 0

@@ -20,14 +20,14 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
-    Unity.Rider.Editor.dll:
-    - Packages.Rider.Editor.RiderScriptEditorData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -36,7 +36,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -47,102 +46,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
-    com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
-    Assets/Scenes/MAPBIEN.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9768}
-    - Class: 114
-      Script: {instanceID: 9816}
-    - Class: 114
-      Script: {instanceID: 10070}
-    - Class: 114
-      Script: {instanceID: 10160}
-    - Class: 114
-      Script: {instanceID: 10548}
-    - Class: 114
-      Script: {instanceID: 10612}
-    - Class: 114
-      Script: {instanceID: 11034}
-    - Class: 114
-      Script: {instanceID: 11042}
-    - Class: 114
-      Script: {instanceID: 11604}
-    - Class: 114
-      Script: {instanceID: 11620}
-    - Class: 114
-      Script: {instanceID: 11654}
-    - Class: 114
-      Script: {instanceID: 11800}
-    - Class: 114
-      Script: {instanceID: 12206}
-    - Class: 114
-      Script: {instanceID: 12296}
-    - Class: 114
-      Script: {instanceID: 12304}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 136
-      Script: {instanceID: 0}
-    - Class: 154
-      Script: {instanceID: 0}
-    - Class: 156
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 195
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 218
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 238
-      Script: {instanceID: 0}
     Assets/Scenes/Menubien.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -213,33 +117,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11220}
     - Class: 114
-      Script: {instanceID: 11310}
+      Script: {instanceID: 11312}
     - Class: 114
-      Script: {instanceID: 11398}
+      Script: {instanceID: 11400}
     - Class: 114
-      Script: {instanceID: 11408}
+      Script: {instanceID: 11410}
     - Class: 114
-      Script: {instanceID: 11604}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 11638}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 11648}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 11654}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 11658}
+      Script: {instanceID: 11660}
     - Class: 114
-      Script: {instanceID: 11800}
+      Script: {instanceID: 11802}
     - Class: 114
-      Script: {instanceID: 12206}
+      Script: {instanceID: 12208}
     - Class: 114
-      Script: {instanceID: 12296}
+      Script: {instanceID: 12298}
     - Class: 114
-      Script: {instanceID: 12304}
+      Script: {instanceID: 12306}
     - Class: 114
-      Script: {instanceID: 12344}
+      Script: {instanceID: 12346}
     - Class: 114
-      Script: {instanceID: 12352}
+      Script: {instanceID: 12354}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -269,6 +173,93 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 225
+      Script: {instanceID: 0}
+    Assets/maps/map/mapprintemps 1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9768}
+    - Class: 114
+      Script: {instanceID: 9816}
+    - Class: 114
+      Script: {instanceID: 10070}
+    - Class: 114
+      Script: {instanceID: 10160}
+    - Class: 114
+      Script: {instanceID: 10548}
+    - Class: 114
+      Script: {instanceID: 10612}
+    - Class: 114
+      Script: {instanceID: 11034}
+    - Class: 114
+      Script: {instanceID: 11042}
+    - Class: 114
+      Script: {instanceID: 11606}
+    - Class: 114
+      Script: {instanceID: 11622}
+    - Class: 114
+      Script: {instanceID: 11656}
+    - Class: 114
+      Script: {instanceID: 11802}
+    - Class: 114
+      Script: {instanceID: 12208}
+    - Class: 114
+      Script: {instanceID: 12298}
+    - Class: 114
+      Script: {instanceID: 12306}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 238
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -567,7 +558,7 @@ ScriptsOnlyBuild:
     className: ConnectAndJoinRandomLb
   - hash:
       serializedVersion: 2
-      Hash: 8c1e482f7d9352f5075529522132bbd5
+      Hash: 2e6cbf6a874ede3719b8b74ee7e2e01b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: enemiesspawn
@@ -1135,6 +1126,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: GameVersionProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: switchscene
   - hash:
       serializedVersion: 2
       Hash: c380fc5ce39348202e0a58fe3e243a74
@@ -1804,5 +1801,5 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menubien.unity
-  - Assets/Scenes/MAPBIEN.unity
+  - Assets/maps/map/mapprintemps 1.unity
   playerPath: D:/projet-s2/saisonapasdiDe_Data/saisonapasdiDe.exe

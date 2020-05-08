@@ -166,6 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 195908132}
   - component: {fileID: 195908130}
+  - component: {fileID: 195908131}
   m_Layer: 0
   m_Name: Network
   m_TagString: Untagged
@@ -189,6 +190,22 @@ MonoBehaviour:
   player: {fileID: 4462472062561273953, guid: 8d5e80563244a8a47bd5b1709b28cf33, type: 3}
   camera: {fileID: 760736057}
   spawn2: {fileID: 102579690}
+  enemiespawn1: {fileID: 0}
+  enemiespawn2: {fileID: 0}
+  enemie: {fileID: 0}
+  type: {fileID: 0}
+--- !u!114 &195908131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195908129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464d6809159622248938c4cbaf6ffadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &195908132
 Transform:
   m_ObjectHideFlags: 0

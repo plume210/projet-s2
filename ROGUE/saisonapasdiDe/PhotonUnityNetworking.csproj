@@ -82,6 +82,9 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>/Users/ionyrakotoson/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/ludov/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.19f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>

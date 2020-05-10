@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class Health : MonoBehaviour
     public int health = 100;
     public RectTransform healthBar;
     private PhotonView view;
+    public int dmg;
 
     public string tag;
     // Start is called before the first frame update
@@ -20,17 +22,16 @@ public class Health : MonoBehaviour
     
 
     // Update is called once per frame
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter (Collider other)
     {
-        if (col.gameObject.CompareTag(tag) && view.IsMine)
+        if (other.gameObject.CompareTag(tag))
         {
-            health -= 10;
+            health -= dmg;
             Debug.Log(health);
-            healthBar.sizeDelta = new Vector2(health, healthBar.sizeDelta.y);
-            view.RPC("MajVie", RpcTarget.Others, health);
+            PhotonNetwork.Destroy(other.gameObject);
         }
 
-        if (health <= 0 && view.IsMine)
+        if (health <= 0 )
         {
             health = 0;
             Debug.Log("Dead!");
@@ -38,10 +39,16 @@ public class Health : MonoBehaviour
         }
     }
 
-    [PunRPC]
-    void MajVie(int vie)
+   
+    public void Update()
     {
-        healthBar.sizeDelta = new Vector2(vie, healthBar.sizeDelta.y);
+        view.RPC("MajVie",RpcTarget.All);
+    }
+
+    [PunRPC]
+    void MajVie()
+    {
+        healthBar.sizeDelta = new Vector2(health, healthBar.sizeDelta.y);
     }
     
 }

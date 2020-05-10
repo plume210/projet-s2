@@ -78,6 +78,9 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>/Users/ionyrakotoson/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/ludov/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>/Users/ionyrakotoson/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>

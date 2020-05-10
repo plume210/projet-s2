@@ -12,43 +12,26 @@ public class tirenemideplacement : MonoBehaviour
     public void Start()
     {
         player = GameObject.FindGameObjectsWithTag("Player");
-        sort(player);
-        target = player[0].transform.position;
+        target = player[sort2(player)].transform.position;
 
     }
-    public double distance(GameObject objet)
-    {
-        return Math.Sqrt(Math.Pow(objet.transform.position.x + transform.position.x, 2) + 
-                         Math.Pow(objet.transform.position.y + transform.position.x, 2) +
-                         Math.Pow(objet.transform.position.z + transform.position.z, 2));
-    }
-
-    public void sort(GameObject[] bruh)
-    {
-        int i = 0;
-        
-        while (i<bruh.Length-2)
-        {
-            
-            if (distance(bruh[i]) > distance(bruh[i + 1]))
-            {
-                (bruh[i], bruh[i + 1]) = (bruh[i + 1], bruh[i]);
-                if (i==0)
-                {
-                    i += 1;
-                }
-                else
-                {
-                    i = i - 1;    
-                }
-                
-            }
-            else
-            {
-                i += 1;
+    public int sort2(GameObject[] joueurs)                                                                     
+    {                                                                                                          
+        float distance = Vector3.Distance(joueurs[0].transform.position, transform.position);                  
+        int j = 0;                                                                                             
+        for (int i = 0; i < joueurs.Length; i++)                                                               
+        {                                                                                                      
+            float distance2 = Vector3.Distance(joueurs[i].transform.position, transform.position);             
+            if (distance2<distance)                                                                            
+            {                                                                                                  
+                distance = distance2;                                                                          
+                j = i;                                                                                         
             }
         }
-    }
+        return j;
+    }                                                                                                          
+
+  
 
     public void Update()
     {
@@ -61,10 +44,9 @@ public class tirenemideplacement : MonoBehaviour
 
     public void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Player")
-        {
+        
             DestroyProjectile();
-        }
+        
     }
 
     public void DestroyProjectile()

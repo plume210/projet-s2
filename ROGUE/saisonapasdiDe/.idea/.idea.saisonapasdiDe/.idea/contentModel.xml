@@ -6,6 +6,7 @@
     <e p="C:\Users\ludov\projet-s2\ROGUE\saisonapasdiDe" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="apparition portai.cs" t="Include" />
         <e p="CameraSmooth.cs" t="Include" />
         <e p="collision" t="Include">
           <e p="collision.cs" t="Include" />
@@ -364,6 +365,7 @@
             <e p="WebSocket.cs" t="Include" />
           </e>
         </e>
+        <e p="switchscene.cs" t="Include" />
         <e p="tiralliedeplacement.cs" t="Include" />
         <e p="tirenemideplacement.cs" t="Include" />
       </e>

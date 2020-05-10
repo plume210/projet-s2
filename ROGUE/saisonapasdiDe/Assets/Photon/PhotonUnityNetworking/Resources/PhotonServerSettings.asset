@@ -35,5 +35,12 @@ MonoBehaviour:
   - Fire
   - RespawnSpaceship
   - MajVie
+  - deplacementandtir
+  - spawnenemie
+  - animation
+  - spawnenemy
+  - updatehealth
+  - waves
+  - enemispawn
   DisableAutoOpenWizard: 1
   ShowSettings: 0

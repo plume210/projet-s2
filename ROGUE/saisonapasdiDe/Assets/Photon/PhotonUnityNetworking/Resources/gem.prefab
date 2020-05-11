@@ -145,6 +145,7 @@ MonoBehaviour:
   Boss: {fileID: 0}
   wave1: {fileID: 0}
   wave2: {fileID: 0}
+  wave3: {fileID: 0}
   spawnwavtext: {fileID: 0}
 --- !u!114 &-6458978779270153340
 MonoBehaviour:

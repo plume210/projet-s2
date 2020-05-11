@@ -31,10 +31,11 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
 
     private (GameObject[], int)[] wavefinal;
     private GameObject[] enemiesliste;
-    public int nbwaves = -1;
+    private int nbwaves =-1;
 
     public void Start()
     {
+        
         enemiesliste = new []  {enemie1, enemie2};
         GameObject[] bosse = new[] {Boss};
         (GameObject[], int) waveboss = (bosse, 1);
@@ -54,8 +55,11 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
             nbwaves += 1;
             Debug.Log(nbwaves);
             StartCoroutine(waitsecond(5));
+           
         }
     }
+
+    
 
     IEnumerator waitsecond(int x)
     {

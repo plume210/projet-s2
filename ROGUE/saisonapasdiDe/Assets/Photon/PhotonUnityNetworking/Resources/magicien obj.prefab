@@ -218,4 +218,4 @@ MonoBehaviour:
   health: 1000
   healthBar: {fileID: 0}
   dmg: 0
-  tag: 
+  tag: Player

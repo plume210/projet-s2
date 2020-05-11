@@ -8,6 +8,7 @@ TagManager:
   - AllyBullet
   - Enemies
   - enemies
+  - palier dactivation
   layers:
   - Default
   - TransparentFX

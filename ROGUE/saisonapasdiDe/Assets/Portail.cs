@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
 
-public class apparitionportai : MonoBehaviour
+public class Portail : MonoBehaviour
 {
     private int health;
 
     public GameObject portail;
 
-    public Transform oui;
+   
     // Start is called before the first frame update
    
 
@@ -19,7 +19,7 @@ public class apparitionportai : MonoBehaviour
         health = GetComponent<Health>().health;
         if (health == 0)
         {
-            PhotonNetwork.Instantiate(portail.name, oui.position, Quaternion.identity);
+            PhotonNetwork.Instantiate(portail.name, transform.position, Quaternion.identity);
             
         }
     }

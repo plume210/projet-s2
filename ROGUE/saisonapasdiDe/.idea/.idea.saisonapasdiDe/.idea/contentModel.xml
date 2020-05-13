@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="apparitiongemme.cs" t="Include" />
+        <e p="bosstir.cs" t="Include" />
         <e p="CameraSmooth.cs" t="Include" />
         <e p="collision" t="Include">
           <e p="collision.cs" t="Include" />
@@ -368,6 +369,7 @@
         <e p="Portail.cs" t="Include" />
         <e p="switchscene.cs" t="Include" />
         <e p="tiralliedeplacement.cs" t="Include" />
+        <e p="tircollision.cs" t="Include" />
         <e p="tirenemideplacement.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />

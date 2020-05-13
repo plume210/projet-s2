@@ -16,6 +16,7 @@ public class enemiesmouvement : MonoBehaviour
     public float startshot;
     private float  timebtwshot;
     private PhotonView view;
+    public int bulletspeed;
     public void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -49,12 +50,13 @@ public class enemiesmouvement : MonoBehaviour
     void deplacementandtir()
     {
         _player = GameObject.FindGameObjectsWithTag("Player");
-        
-        _agent.SetDestination(_player[sort2(_player)].transform.position);
+
+        _agent.destination = _player[sort2(_player)].transform.position;
+        //_agent.SetDestination(_player[sort2(_player)].transform.position);
         if (timebtwshot <= 0)
         { 
-            GameObject bullet = Instantiate(tir, spawn.position, Quaternion.identity);
-            bullet.AddComponent<Rigidbody>();
+            GameObject bullet = PhotonNetwork.Instantiate(tir.name, spawn.position, Quaternion.identity);
+            bullet.GetComponent<Rigidbody>().velocity = spawn.forward * bulletspeed;
             timebtwshot = startshot;
         }
         else

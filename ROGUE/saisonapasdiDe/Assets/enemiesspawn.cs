@@ -65,9 +65,10 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
     {
         (GameObject[] a, int b) = wavefinal[nbwaves];
         GameObject ye = PhotonNetwork.Instantiate(wavetext[nbwaves].name, spawnwavtext.transform.position,wavetext[nbwaves].transform.rotation);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         PhotonNetwork.Destroy(ye);
-        _view.RPC("enemispawn",RpcTarget.MasterClient,5, a);yield return new WaitForSeconds(x);
+        _view.RPC("enemispawn",RpcTarget.MasterClient,5, a);
+        yield return new WaitForSeconds(x);
     }
 
    
@@ -79,9 +80,8 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
         int i = new Random().Next(1, enemiesnumer);
         int g = 0;
         int e = 0;
-        int u = 0;
         GameObject ENEMIETAMERELAPUTE = new GameObject();
-        while (i > u)
+        while (i > 0 )
         {
             int generation = new Random().Next(0, enemiestype.Length);
             int posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),
@@ -96,17 +96,15 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
                     Convert.ToInt32(enemiespawn2.position.z));
             }
 
-            Vector3 pos = new Vector3(posx, enemiespawn2.position.y - 7, posy); // spawn du joueur
+            Vector3 pos = new Vector3(posx, enemiespawn2.position.y - 20, posy); // spawn du joueur
             ENEMIETAMERELAPUTE =
-                PhotonNetwork.Instantiate(enemiestype[generation].name, pos, Quaternion.identity); // creer le joueur
+                PhotonNetwork.Instantiate(enemiestype[generation].name, pos,Quaternion.identity ); // creer le joueur
            // Debug.Log(PhotonNetwork.CurrentRoom.Name);
            // Debug.Log("joueur" + PhotonNetwork.CurrentRoom.Players.Count);
-            ENEMIETAMERELAPUTE.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
-            //liste.GetComponent<Rigidbody>().useGravity = true;
-            ENEMIETAMERELAPUTE.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-            g = posx;
+           ENEMIETAMERELAPUTE.GetComponent<Rigidbody>().velocity = new Vector3(100,100,100);
+               g = posx;
             e = posy;
-            u += 1;
+            
             i -= 1;
         }
     }

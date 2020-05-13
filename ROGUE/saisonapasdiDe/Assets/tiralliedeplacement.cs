@@ -41,22 +41,13 @@ public class tiralliedeplacement : MonoBehaviour
             
             if (transform.position == pos)
             {
-                DestroyProjectile();
+                PhotonNetwork.Destroy(gameObject);
             }
         }
     }
 
-    public void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag == "enemies")
-        {
-            DestroyProjectile();
-        }
-    }
+   
 
-    public void DestroyProjectile()
-    {
-        Destroy(gameObject);
-    }
+   
     
 }

@@ -10,12 +10,15 @@ using UnityEngine.SceneManagement;
 
 public class switchscene : MonoBehaviour
 {
+  public Transform oui;
+  
+  
   public void OnTriggerEnter(Collider other)
   {
-    SceneManager.LoadScene("mapprintemps2");
     foreach (var VARIABLE in GameObject.FindGameObjectsWithTag("Player"))
     {
-      PhotonNetwork.Disconnect();
+      VARIABLE.transform.position = oui.position;
     }
+    
   }
 }

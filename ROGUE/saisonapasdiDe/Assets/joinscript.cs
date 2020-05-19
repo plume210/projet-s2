@@ -85,10 +85,8 @@ public class joinscript : MonoBehaviourPunCallbacks
         camera.GetComponent<CameraSmooth>().target = Myplayer.transform;
         Myplayer.transform.Rotate(-90, 0, 0);
         yield return new WaitForSeconds(0.1f);
-        //Myplayer.AddComponent<Rigidbody>();
-        Myplayer.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
-        Myplayer.GetComponent<Rigidbody>().useGravity = true;
-        Myplayer.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+       
+
     }
      
 }

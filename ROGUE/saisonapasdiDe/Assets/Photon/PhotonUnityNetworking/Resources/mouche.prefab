@@ -394,7 +394,7 @@ MonoBehaviour:
   spawn: {fileID: 718958871415785859}
   tir: {fileID: 2129100794709618500, guid: fbf603a1e3a6c434eae886a0b4902bde, type: 3}
   startshot: 1
-  bulletspeed: 1000
+  bulletspeed: 100
 --- !u!114 &4675557146610975235
 MonoBehaviour:
   m_ObjectHideFlags: 0

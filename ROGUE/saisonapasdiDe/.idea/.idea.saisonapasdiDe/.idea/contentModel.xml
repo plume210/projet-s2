@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_saisonapasdiDe.-143247213.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+    <e p="C:\Users\ludov\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ludov\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_saisonapasdiDe.1334307941.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ludov\projet-s2\ROGUE\saisonapasdiDe" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="apparitiongemme.cs" t="Include" />
         <e p="bosstir.cs" t="Include" />
         <e p="CameraSmooth.cs" t="Include" />
+        <e p="collider.cs" t="Include" />
         <e p="collision" t="Include">
           <e p="collision.cs" t="Include" />
         </e>
@@ -417,7 +418,7 @@
       <e p="PunDemos.DemoHubEditor.csproj" t="IncludeRecursive" />
       <e p="PunDemos.DemoSlotcarEditor.csproj" t="IncludeRecursive" />
       <e p="saisonapasdiDe.sln" t="IncludeFlat" />
-      <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

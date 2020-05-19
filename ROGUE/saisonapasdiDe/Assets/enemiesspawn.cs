@@ -33,6 +33,8 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
     private GameObject[] enemiesliste;
     private int nbwaves =-1;
 
+    public int Nbwaves => nbwaves;
+
     public void Start()
     {
         

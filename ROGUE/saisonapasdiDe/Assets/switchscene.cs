@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Net.Mime;
 using Photon.Pun;
 using Photon.Realtime;
-using UnityEditor;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = System.Random;
@@ -15,14 +15,15 @@ public class switchscene : MonoBehaviour
     public Transform ete;
     public Transform automne;
     public Transform Prindtemps;
-    private Transform oui;
+    private Transform[] listeendroite;
+    private int i;
     
     private int waves;
     public int nbwaves;
 
     public void Start()
     {
-        Transform[] listeendroite = new[] {hiver, automne, ete, Prindtemps};
+        listeendroite = new [] {hiver, automne, ete, Prindtemps};
         int i = new Random().Next(0,3);
     }
 
@@ -33,11 +34,11 @@ public class switchscene : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (waves == nbwaves)
+        if (waves >= nbwaves)
         {
             foreach (var VARIABLE in GameObject.FindGameObjectsWithTag("Player"))
             {
-                VARIABLE.transform.position = oui.position;
+                VARIABLE.transform.position = listeendroite[i].position;
             }
             
         }

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
-using UnityEditor.IMGUI.Controls;
+
 using UnityEngine;
 
 public class bosstir : MonoBehaviour
@@ -24,7 +24,7 @@ public class bosstir : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tirspawns.transform.RotateAround(transform.position,transform.up,1);
+        tirspawns.transform.RotateAround(transform.position,transform.forward,1);
         if (timebtwshot <= 0)
         { 
             GameObject bullet = PhotonNetwork.Instantiate(objet.name, tirspawns.position, Quaternion.identity);

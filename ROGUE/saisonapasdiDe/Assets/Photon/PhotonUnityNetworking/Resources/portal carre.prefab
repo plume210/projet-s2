@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 183840847088736210}
   - component: {fileID: -2899671103092922955}
   - component: {fileID: -7648670818299208340}
-  - component: {fileID: -6935277033993914443}
   - component: {fileID: 5979709189530866267}
   m_Layer: 0
   m_Name: portal carre
@@ -72,18 +71,6 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 1
---- !u!114 &-6935277033993914443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3807366454303040961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464d6809159622248938c4cbaf6ffadf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &5979709189530866267
 BoxCollider:
   m_ObjectHideFlags: 0

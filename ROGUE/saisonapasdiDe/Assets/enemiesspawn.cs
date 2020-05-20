@@ -7,6 +7,7 @@ using JetBrains.Annotations;
 using Photon.Pun;
 using Photon.Pun.Demo.Cockpit;
 using Photon.Realtime;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 using Random = System.Random;
@@ -83,7 +84,7 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
         int g = 0;
         int e = 0;
         GameObject ENEMIETAMERELAPUTE = new GameObject();
-        while (i > 0 )
+        while (i > 1 )
         {
             int generation = new Random().Next(0, enemiestype.Length);
             int posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),
@@ -98,13 +99,13 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
                     Convert.ToInt32(enemiespawn2.position.z));
             }
 
-            Vector3 pos = new Vector3(posx, enemiespawn2.position.y - 20, posy); // spawn du joueur
+            Vector3 pos = new Vector3(posx, enemiespawn2.position.y , posy); // spawn du joueur
             ENEMIETAMERELAPUTE =
-                PhotonNetwork.Instantiate(enemiestype[generation].name, pos,Quaternion.identity ); // creer le joueur
-           // Debug.Log(PhotonNetwork.CurrentRoom.Name);
+                PhotonNetwork.Instantiate(enemiestype[generation].name, pos,enemiestype[generation].transform.rotation);
+            // Debug.Log(PhotonNetwork.CurrentRoom.Name);
            // Debug.Log("joueur" + PhotonNetwork.CurrentRoom.Players.Count);
            ENEMIETAMERELAPUTE.GetComponent<Rigidbody>().velocity = new Vector3(100,100,100);
-               g = posx;
+            g = posx;
             e = posy;
             
             i -= 1;

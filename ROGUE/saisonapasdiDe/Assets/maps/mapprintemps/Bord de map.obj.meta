@@ -3,7 +3,12 @@ guid: 0520b999d362ebf4983843084ef3fcd2
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bord_de_mapMat
+    second: {fileID: 2100000, guid: aafe4688b15eaaa43a70532c2ac0e6b2, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

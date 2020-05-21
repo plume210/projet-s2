@@ -17,6 +17,7 @@ public class switchscene : MonoBehaviour
     public Transform Prindtemps;
     private Transform[] listeendroite;
     private int i;
+    public GameObject vortex;
     
     private int waves;
     public int nbwaves;
@@ -30,6 +31,10 @@ public class switchscene : MonoBehaviour
     private void Update()
     {
         waves = GetComponent<enemiesspawn>().Nbwaves;
+        if (waves >= nbwaves)
+        {
+            PhotonNetwork.Instantiate(vortex.name, transform.position, Quaternion.identity);
+        }
     }
 
     public void OnTriggerEnter(Collider other)

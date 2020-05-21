@@ -72,11 +72,11 @@
      <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Editor\Views\PhotonTransformViewClassicEditor.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Editor\Views\PhotonTransformViewEditor.cs" />
      <None Include="Assets\Photon\PhotonUnityNetworking\Code\Editor\ReordableList\LICENSE.txt" />
- <Reference Include="UnityEditor.UI">
- <HintPath>/Users/ionyrakotoson/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Users/ionyrakotoson/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Users/ionyrakotoson/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>/Users/ionyrakotoson/projet-s2/ROGUE/saisonapasdiDe/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -36,6 +37,7 @@ public class Health : MonoBehaviour
             health = 0;
             Debug.Log("Dead!");
             PhotonNetwork.Destroy(gameObject);
+            SceneManager.LoadScene("Fin/GameOver");
         }
     }
 

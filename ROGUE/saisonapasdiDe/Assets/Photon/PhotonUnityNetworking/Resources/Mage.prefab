@@ -255,9 +255,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.9165976
-  m_Height: 3.6092718
+  m_Height: 6.231645
   m_Direction: 2
-  m_Center: {x: 0, y: -0.025289917, z: 1.4212786}
+  m_Center: {x: 0, y: -0.025289917, z: 0.11009217}
 --- !u!114 &-7791648981164808625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tirspawns: {fileID: 4234264092228507715}
-  objet: {fileID: 2129100794709618500, guid: fbf603a1e3a6c434eae886a0b4902bde, type: 3}
+  objet: {fileID: 4724869996398017432, guid: dc6b7a629db3ae64fab178a672fb9c0c, type: 3}
   bulletspeed: 100
   startshot: 0.08
 --- !u!1 &5418430074942448866
@@ -850,7 +850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8917034469970954488}
   m_LocalRotation: {x: 0.7071068, y: -0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 0.0049999976, y: -0.01, z: 0.91}
+  m_LocalPosition: {x: 0.0049999976, y: -0.01, z: -1.02}
   m_LocalScale: {x: 0.01, y: 0.009999998, z: 0.009999998}
   m_Children: []
   m_Father: {fileID: 9145160655797096999}

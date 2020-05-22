@@ -84,7 +84,7 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
         int g = 0;
         int e = 0;
         GameObject ENEMIETAMERELAPUTE = new GameObject();
-        while (i > 1 )
+        while (i > 0)
         {
             int generation = new Random().Next(0, enemiestype.Length);
             int posx = new Random().Next(Convert.ToInt32(enemiespawn1.position.x),

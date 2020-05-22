@@ -12,10 +12,7 @@ using Random = System.Random;
 public class switchscene : MonoBehaviour
 {
     public Transform hiver;
-    public Transform ete;
-    public Transform automne;
-    public Transform Prindtemps;
-    private Transform[] listeendroite;
+   
     private int i;
     public GameObject vortex;
     
@@ -24,8 +21,7 @@ public class switchscene : MonoBehaviour
 
     public void Start()
     {
-        listeendroite = new [] {hiver, automne, ete, Prindtemps};
-        int i = new Random().Next(0,3);
+      
     }
 
     private void Update()
@@ -43,7 +39,7 @@ public class switchscene : MonoBehaviour
         {
             foreach (var VARIABLE in GameObject.FindGameObjectsWithTag("Player"))
             {
-                VARIABLE.transform.position = listeendroite[i].position;
+                VARIABLE.transform.position = hiver.position;
             }
             
         }

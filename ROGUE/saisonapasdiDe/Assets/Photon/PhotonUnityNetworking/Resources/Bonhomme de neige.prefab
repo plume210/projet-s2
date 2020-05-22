@@ -539,7 +539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 1681230111389612155}
-  tir: {fileID: 2129100794709618500, guid: fbf603a1e3a6c434eae886a0b4902bde, type: 3}
+  tir: {fileID: 4724869996398017432, guid: dc6b7a629db3ae64fab178a672fb9c0c, type: 3}
   startshot: 0
   bulletspeed: 100
 --- !u!54 &6902684541722338728

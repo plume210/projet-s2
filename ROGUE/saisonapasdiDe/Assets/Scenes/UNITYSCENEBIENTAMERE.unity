@@ -6048,10 +6048,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7436c3b5792967438d5b4d7779651a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn: {fileID: 1686650100}
+  spawn: {fileID: 2105731674}
   player: {fileID: 4462472062561273953, guid: 8d5e80563244a8a47bd5b1709b28cf33, type: 3}
   camera: {fileID: 1124332093}
-  spawn2: {fileID: 1686650100}
+  spawn2: {fileID: 2105731674}
 --- !u!4 &994850931
 Transform:
   m_ObjectHideFlags: 0

@@ -3,7 +3,12 @@ guid: 6d4075e97d373ba4b8602910217953d2
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hiver_solMat
+    second: {fileID: 2100000, guid: d76d2d95049b85b49a29963f6fb47fac, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

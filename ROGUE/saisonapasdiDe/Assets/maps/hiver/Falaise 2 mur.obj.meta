@@ -3,7 +3,12 @@ guid: ae7f95da4eee9ab43b7f738435af7523
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Falaise_2_murMat
+    second: {fileID: 2100000, guid: d76d2d95049b85b49a29963f6fb47fac, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

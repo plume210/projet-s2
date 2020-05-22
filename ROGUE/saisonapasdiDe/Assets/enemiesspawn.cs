@@ -32,7 +32,7 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
 
     private (GameObject[], int)[] wavefinal;
     private GameObject[] enemiesliste;
-    private int nbwaves =-1;
+    public int nbwaves =-1;
 
     public int Nbwaves => nbwaves;
 
@@ -44,7 +44,7 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
         (GameObject[], int) waveboss = (bosse, 1);
         (GameObject[], int) wavesnb1 = (enemiesliste, 5);
         (GameObject[], int) wavesnb2 = (enemiesliste, 10);
-        wavefinal = new []{wavesnb1, wavesnb2,waveboss};
+        wavefinal = new []{wavesnb1, wavesnb2};
         wavetext = new[] {wave1, wave2,wave3};
         
         _view = GetComponent<PhotonView>();
@@ -55,6 +55,10 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
     {
         if (other.tag == "Player" && GameObject.FindGameObjectsWithTag("enemies").Length == 0)
         {
+            foreach (var VARIABLE in GameObject.FindGameObjectsWithTag("Bullet"))
+            {
+                PhotonNetwork.Destroy(VARIABLE);
+            }
             nbwaves += 1;
             Debug.Log(nbwaves);
             StartCoroutine(waitsecond(5));

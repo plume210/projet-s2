@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\apparitiongemme.cs" />
+     <Compile Include="Assets\BOSSAPARITION.cs" />
      <Compile Include="Assets\bosstir.cs" />
      <Compile Include="Assets\CameraSmooth.cs" />
      <Compile Include="Assets\collider.cs" />

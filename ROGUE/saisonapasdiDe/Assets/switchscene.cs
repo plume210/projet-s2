@@ -12,6 +12,7 @@ using Random = System.Random;
 public class switchscene : MonoBehaviour
 {
     public Transform hiver;
+    public Transform portail;
    
     private int i;
     public GameObject vortex;
@@ -27,15 +28,16 @@ public class switchscene : MonoBehaviour
     private void Update()
     {
         waves = GetComponent<enemiesspawn>().Nbwaves;
-        if (waves >= nbwaves)
-        {
-            PhotonNetwork.Instantiate(vortex.name, transform.position, Quaternion.identity);
-        }
+       
     }
 
     public void OnTriggerEnter(Collider other)
     {
-        if (waves >= nbwaves)
+        if (waves == nbwaves-1)
+        {
+            PhotonNetwork.Instantiate(vortex.name, portail.position, portail.rotation);
+        }
+        if (waves == nbwaves)
         {
             foreach (var VARIABLE in GameObject.FindGameObjectsWithTag("Player"))
             {

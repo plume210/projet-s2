@@ -19,10 +19,10 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
     public Transform enemiespawn2;
     public GameObject enemie1;
     public GameObject enemie2;
-    public GameObject Boss;
+  
     public GameObject wave1;
     public GameObject wave2;
-    public GameObject wave3;
+    
     public Transform spawnwavtext;
     private GameObject[] wavetext;
     
@@ -40,12 +40,12 @@ public class enemiesspawn : MonoBehaviourPunCallbacks
     {
         
         enemiesliste = new []  {enemie1, enemie2};
-        GameObject[] bosse = new[] {Boss};
-        (GameObject[], int) waveboss = (bosse, 1);
+        
+       
         (GameObject[], int) wavesnb1 = (enemiesliste, 5);
         (GameObject[], int) wavesnb2 = (enemiesliste, 10);
         wavefinal = new []{wavesnb1, wavesnb2};
-        wavetext = new[] {wave1, wave2,wave3};
+        wavetext = new[] {wave1, wave2};
         
         _view = GetComponent<PhotonView>();
     }

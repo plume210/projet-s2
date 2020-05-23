@@ -294,8 +294,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3106062687686061400}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 0.092, y: -0.343, z: 0.572}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.092, y: 0.521, z: 0.613}
   m_LocalScale: {x: 0.01, y: 0.009999998, z: 0.009999998}
   m_Children: []
   m_Father: {fileID: 7192738116762552172}
@@ -721,10 +721,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.8572807
-  m_Height: 3.7145615
-  m_Direction: 2
-  m_Center: {x: -0.05030838, y: 0.29125962, z: 0.11153793}
+  m_Radius: 0.65154
+  m_Height: 2.3444452
+  m_Direction: 1
+  m_Center: {x: 0.055105362, y: 0.0078158565, z: -0.19609512}
 --- !u!114 &2198111065264464238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -808,7 +808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn: {fileID: 413086886776049760}
   tir: {fileID: 4724869996398017432, guid: dc6b7a629db3ae64fab178a672fb9c0c, type: 3}
-  startshot: 1
+  startshot: 2
   bulletspeed: 100
 --- !u!1 &6565438622298326778
 GameObject:

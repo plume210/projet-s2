@@ -22,7 +22,7 @@ public class BOSSAPARITION : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         wave = GetComponent<enemiesspawn>().Nbwaves;
-        if (wave == 2 && other.tag == "Player" && GameObject.FindGameObjectsWithTag("enemies").Length == 0)
+        if (wave == 1 && other.tag == "Player" && GameObject.FindGameObjectsWithTag("enemies").Length == 0)
         {
             StartCoroutine(appartition());
         }
@@ -30,8 +30,9 @@ public class BOSSAPARITION : MonoBehaviour
 
     IEnumerator appartition()
     {
-        GameObject ye = PhotonNetwork.Instantiate(wavefinal.name, wavespawn.position, wavespawn.rotation);
+        GameObject ye = PhotonNetwork.Instantiate(wavefinal.name, wavespawn.position, wavefinal.transform.rotation);
         yield return new WaitForSeconds(2);
         PhotonNetwork.Destroy(ye);
+        PhotonNetwork.Instantiate(boss.name, pos.position, pos.rotation);
     }
 }

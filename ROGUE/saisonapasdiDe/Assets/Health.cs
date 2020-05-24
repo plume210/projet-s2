@@ -37,7 +37,10 @@ public class Health : MonoBehaviour
             health = 0;
             Debug.Log("Dead!");
             PhotonNetwork.Destroy(gameObject);
-            SceneManager.LoadScene("Fin/GameOver");
+            if (gameObject.CompareTag("Player"))
+            {
+                SceneManager.LoadScene("Fin/GameOver");
+            }
         }
     }
 

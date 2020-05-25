@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -28,17 +29,18 @@ public class Health : MonoBehaviour
         if (other.gameObject.CompareTag(tag))
         {
             health -= dmg;
-            Debug.Log(health);
+            
             PhotonNetwork.Destroy(other.gameObject);
         }
 
         if (health <= 0 )
         {
             health = 0;
-            Debug.Log("Dead!");
+          
             PhotonNetwork.Destroy(gameObject);
-            if (gameObject.CompareTag("Player"))
+            if (gameObject.CompareTag("Player") && GameObject.FindGameObjectsWithTag("Player ").Length == 0)
             {
+                
                 SceneManager.LoadScene("Fin/GameOver");
             }
         }
@@ -47,7 +49,7 @@ public class Health : MonoBehaviour
    
     public void Update()
     {
-        view.RPC("MajVie",RpcTarget.All);
+        view.RPC("MajVie",RpcTarget.AllBuffered);
     }
 
     [PunRPC]

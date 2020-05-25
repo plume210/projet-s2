@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - BOSSAPARITION
     - Bulle
     - CameraSmooth
+    - GameOver
     - Health
     - MainMenu
     - PlayerController
@@ -65,6 +66,85 @@ ScriptsOnlyBuild:
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
+    Assets/Fin/GameOver.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 102
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9790}
+    - Class: 114
+      Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10094}
+    - Class: 114
+      Script: {instanceID: 10876}
+    - Class: 114
+      Script: {instanceID: 11066}
+    - Class: 114
+      Script: {instanceID: 11692}
+    - Class: 114
+      Script: {instanceID: 11838}
+    - Class: 114
+      Script: {instanceID: 12244}
+    - Class: 114
+      Script: {instanceID: 12334}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Intro/Intro.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -115,17 +195,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10094}
     - Class: 114
-      Script: {instanceID: 11052}
+      Script: {instanceID: 11054}
     - Class: 114
-      Script: {instanceID: 11064}
+      Script: {instanceID: 11066}
     - Class: 114
-      Script: {instanceID: 11690}
+      Script: {instanceID: 11692}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 12242}
+      Script: {instanceID: 12244}
     - Class: 114
-      Script: {instanceID: 12332}
+      Script: {instanceID: 12334}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -202,65 +282,65 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10094}
     - Class: 114
-      Script: {instanceID: 10184}
+      Script: {instanceID: 10186}
     - Class: 114
-      Script: {instanceID: 10548}
+      Script: {instanceID: 10550}
     - Class: 114
-      Script: {instanceID: 10638}
+      Script: {instanceID: 10640}
     - Class: 114
-      Script: {instanceID: 10676}
+      Script: {instanceID: 10678}
     - Class: 114
-      Script: {instanceID: 10714}
+      Script: {instanceID: 10716}
     - Class: 114
-      Script: {instanceID: 10982}
+      Script: {instanceID: 10984}
     - Class: 114
-      Script: {instanceID: 11064}
+      Script: {instanceID: 11066}
     - Class: 114
-      Script: {instanceID: 11080}
+      Script: {instanceID: 11082}
     - Class: 114
-      Script: {instanceID: 11106}
+      Script: {instanceID: 11108}
     - Class: 114
-      Script: {instanceID: 11196}
+      Script: {instanceID: 11198}
     - Class: 114
-      Script: {instanceID: 11252}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11344}
+      Script: {instanceID: 11346}
     - Class: 114
-      Script: {instanceID: 11432}
-    - Class: 114
-      Script: {instanceID: 11442}
+      Script: {instanceID: 11434}
     - Class: 114
       Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11494}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11496}
     - Class: 114
-      Script: {instanceID: 11640}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11674}
+      Script: {instanceID: 11642}
     - Class: 114
-      Script: {instanceID: 11684}
+      Script: {instanceID: 11676}
     - Class: 114
-      Script: {instanceID: 11690}
+      Script: {instanceID: 11686}
     - Class: 114
-      Script: {instanceID: 11694}
+      Script: {instanceID: 11692}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11696}
     - Class: 114
-      Script: {instanceID: 12042}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 12242}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12332}
+      Script: {instanceID: 12244}
     - Class: 114
-      Script: {instanceID: 12340}
+      Script: {instanceID: 12334}
     - Class: 114
-      Script: {instanceID: 12380}
+      Script: {instanceID: 12342}
     - Class: 114
-      Script: {instanceID: 12388}
+      Script: {instanceID: 12382}
     - Class: 114
-      Script: {instanceID: 12424}
+      Script: {instanceID: 12390}
+    - Class: 114
+      Script: {instanceID: 12426}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -341,35 +421,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10094}
     - Class: 114
-      Script: {instanceID: 10184}
+      Script: {instanceID: 10158}
     - Class: 114
-      Script: {instanceID: 10638}
+      Script: {instanceID: 10186}
     - Class: 114
-      Script: {instanceID: 11064}
+      Script: {instanceID: 10640}
     - Class: 114
-      Script: {instanceID: 11072}
+      Script: {instanceID: 11066}
     - Class: 114
-      Script: {instanceID: 11080}
+      Script: {instanceID: 11074}
     - Class: 114
-      Script: {instanceID: 11264}
+      Script: {instanceID: 11082}
     - Class: 114
-      Script: {instanceID: 11444}
+      Script: {instanceID: 11266}
     - Class: 114
-      Script: {instanceID: 11640}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 11656}
+      Script: {instanceID: 11642}
     - Class: 114
-      Script: {instanceID: 11690}
+      Script: {instanceID: 11658}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11692}
     - Class: 114
-      Script: {instanceID: 12242}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 12332}
+      Script: {instanceID: 12244}
     - Class: 114
-      Script: {instanceID: 12340}
+      Script: {instanceID: 12334}
     - Class: 114
-      Script: {instanceID: 40874}
+      Script: {instanceID: 12342}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -667,6 +747,12 @@ ScriptsOnlyBuild:
     className: NetworkTransform
   - hash:
       serializedVersion: 2
+      Hash: 6a866878cedc44f58d6f91ac73ab85c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BOSSAPARITION
+  - hash:
+      serializedVersion: 2
       Hash: b1f26da3046d8b188758169a9d6b1078
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.SlotRacer.Utils
@@ -697,7 +783,7 @@ ScriptsOnlyBuild:
     className: ConnectAndJoinRandomLb
   - hash:
       serializedVersion: 2
-      Hash: 2e6cbf6a874ede3719b8b74ee7e2e01b
+      Hash: 050e8377cb18e85bf346be4ff6e7822f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: enemiesspawn
@@ -1973,15 +2059,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 6a866878cedc44f58d6f91ac73ab85c7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BOSSAPARITION
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menubien.unity
   - Assets/Intro/Intro.unity
   - Assets/Scenes/UNITYSCENEBIENTAMERE.unity
+  - Assets/Fin/GameOver.unity
   playerPath: C:/Users/ludov/Documents/saisonapasdiDe.exe

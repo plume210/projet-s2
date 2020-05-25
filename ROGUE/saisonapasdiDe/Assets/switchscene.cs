@@ -43,6 +43,11 @@ public class switchscene : MonoBehaviour
             {
                 VARIABLE.transform.position = hiver.position;
             }
+
+            foreach (var VARIABLE in GameObject.FindGameObjectsWithTag("AllyBullet"))
+            {
+                PhotonNetwork.Destroy(VARIABLE);
+            }
             
         }
     

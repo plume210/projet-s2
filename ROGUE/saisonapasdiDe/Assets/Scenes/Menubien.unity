@@ -356,7 +356,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 940116449}
+      - m_Target: {fileID: 940116450}
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -2482,6 +2482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 940116448}
   - component: {fileID: 940116449}
+  - component: {fileID: 940116450}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -2522,6 +2523,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e2bde088b0fc8b4da9cec0093163cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &940116450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940116447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26db198f2d8a8774d98f34cec39a90c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &943776752

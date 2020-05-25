@@ -292,7 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBar: {fileID: 8914189299650143076}
-  dmg: 5
+  dmg: 50
   tag: AllyBullet
 --- !u!195 &-2827192406699293191
 NavMeshAgent:
